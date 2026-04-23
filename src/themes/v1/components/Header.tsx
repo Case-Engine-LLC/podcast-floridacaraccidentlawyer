@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X, ArrowRight } from 'lucide-react'
-import { navigation } from '@/data/siteData'
+import { navigation, siteConfig } from '@/data/siteData'
 
 interface HeaderProps {
   variant?: 'dark' | 'light'
@@ -37,11 +37,7 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
       <div className="max-w-container mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img
-            src="/palceholder.jpg"
-            alt={navigation.logo}
-            className="h-10 md:h-12 w-auto"
-          />
+          <span className="h-10 flex items-center text-base font-bold tracking-tight">{siteConfig.podcastName}</span>
         </Link>
 
         {/* Desktop Nav */}
