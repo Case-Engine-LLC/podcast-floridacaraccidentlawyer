@@ -1,0 +1,636 @@
+{
+  "about": {
+    "title": "About Jonathon Eberst and The Eberst Law Podcast",
+    "description": "Jonathon T. Eberst founded The Eberst Law Firm in 2009 and has built the firm into a multi-office Florida operation — Stuart, Gainesville, and Daytona Beach — with a reputation insurance companies take seriously because this team goes to trial. The Eberst Law Podcast extends that work. Every episode takes one real Florida scenario — a tourist rear-ended on A1A, a trucking wreck on I-95, a hurricane claim that's been denied, a nursing home abuse case — and walks through it like a war room briefing: what the insurance company is going to do, what they hope you don't know, and exactly how to build the strongest possible case.",
+    "highlights": [
+      "Hosted by Jonathon T. Eberst, founding attorney of The Eberst Law Firm",
+      "Co-hosted by Alexis, who drives the conversation from the viewer's perspective",
+      "Three Florida offices — Stuart (HQ), Gainesville, and Daytona Beach",
+      "Grounded in Florida law — Florida Bar Rule 4-7, comparative fault, insurance bad faith, hurricane claim rules",
+      "East-coast Florida anchored — Treasure Coast, North Central Florida, and the Space/Space Coast corridor",
+      "Free consultations 24/7; contingency fee — we don't get paid unless we win your case"
+    ],
+    "showReadMore": false
+  },
+  "attorney": {
+    "name": "Jonathon T. Eberst",
+    "firm": "The Eberst Law Firm",
+    "title": "Founding Attorney & Podcast Host",
+    "bio": [
+      "Jonathon Eberst founded The Eberst Law Firm in 2009 and hosts The Eberst Law Podcast. He built the firm into a multi-office Florida operation — Stuart, Gainesville, and Daytona Beach — with a reputation insurance companies take seriously because this team actually goes to trial. Jonathon is Florida Bar qualified (Bar No. 67925) and has been recognized as a Super Lawyer (2024–2025), a National Top 100 Trial Lawyer, and a Best Trial Lawyer in America 2022.",
+      "Jonathon's practice spans car accidents, truck accidents, motorcycle accidents, bicycle and pedestrian accidents, slip and fall, wrongful death, and brain injuries — plus nursing home abuse, medical malpractice, and hurricane damage claims through other Eberst team members. He has recovered more than $1 million in individual car accident settlements (including a $1.26M recovery) and routinely takes cases to trial when insurers refuse to pay full value.",
+      "On the podcast, Jonathon works alongside co-host Alexis to break down one real Florida scenario per episode — a rear-ending on A1A, a trucking wreck on I-95, a denied hurricane claim, a nursing home neglect case. He speaks like a trial lawyer preparing a client: direct, strategic, and blunt about what injured Floridians are up against. The audience walks away understanding how insurance companies actually value claims, what counter-strategy looks like, and what to do in the first 72 hours after an accident."
+    ],
+    "signature": "/images/signature.png",
+    "photo": "/attorney-1.avif"
+  },
+  "authorProfiles": {
+    "jonathon-eberst": {
+      "name": "Jonathon T. Eberst",
+      "slug": "jonathon-eberst",
+      "title": "Founding Attorney & Podcast Host",
+      "role": "Host & Founding Attorney",
+      "photo": "/attorney-1.avif",
+      "barNumber": "67925",
+      "barUrl": "https://www.floridabar.org/mybarprofile/67925",
+      "education": [
+        {
+          "degree": "J.D.",
+          "school": "",
+          "year": ""
+        }
+      ],
+      "admissions": [
+        {
+          "jurisdiction": "Florida",
+          "year": ""
+        }
+      ],
+      "awards": [
+        {
+          "name": "Super Lawyers",
+          "years": "2024, 2025",
+          "description": "Recognized by Super Lawyers in 2024 and 2025."
+        },
+        {
+          "name": "National Top 100 Trial Lawyers",
+          "years": "",
+          "description": "Named to the National Top 100 Trial Lawyers."
+        },
+        {
+          "name": "Best Trial Lawyer in America",
+          "years": "2022",
+          "description": "Named a Best Trial Lawyer in America 2022."
+        },
+        {
+          "name": "Best Law Firms of America",
+          "years": "",
+          "description": "The Eberst Law Firm is recognized in Best Law Firms of America."
+        },
+        {
+          "name": "BBB A+ Accredited",
+          "years": "",
+          "description": "A+ rating with the Better Business Bureau."
+        }
+      ],
+      "practiceAreas": [
+        "Personal Injury",
+        "Car Accidents",
+        "Truck Accidents",
+        "Motorcycle Accidents",
+        "Bicycle Accidents",
+        "Pedestrian Accidents",
+        "Slip and Fall",
+        "Wrongful Death",
+        "Brain Injuries"
+      ],
+      "bio": [
+        "Jonathon T. Eberst is the founding attorney of The Eberst Law Firm, which he launched in 2009. Based at the firm's Stuart, Florida headquarters and serving clients across Gainesville and Daytona Beach as well, Jonathon has built a reputation for willingness to take cases to trial — a reputation insurance companies across Florida now take seriously.",
+        "Jonathon is admitted to practice in Florida (Bar No. 67925) and has been recognized as a Super Lawyer (2024–2025), a National Top 100 Trial Lawyer, and a Best Trial Lawyer in America 2022. The firm is listed in Best Law Firms of America and holds an A+ rating with the Better Business Bureau. Notable individual recoveries include a $1.26 million car accident settlement, a $510,000 spine injury recovery, and a $470,000 neck injury settlement.",
+        "As host of The Eberst Law Podcast, Jonathon walks Florida injury victims through one real scenario per episode — Treasure Coast car accidents on A1A, I-95 trucking wrecks, hurricane claims that have been denied, nursing home abuse cases. Alongside co-host Alexis, he breaks down the insurance company's playbook and the counter-strategy in the same terms he would use prepping a client for trial: direct, strategic, and blunt about what the fight actually looks like."
+      ],
+      "memberships": [
+        "The Florida Bar"
+      ],
+      "socialLinks": [],
+      "episodeAppearances": "Host of all episodes"
+    },
+    "alexis": {
+      "name": "Alexis",
+      "slug": "alexis",
+      "title": "Co-Host & Producer",
+      "role": "Producer / Co-Host",
+      "photo": "/attorney-2.avif",
+      "barNumber": "",
+      "barUrl": "",
+      "education": [],
+      "admissions": [],
+      "awards": [],
+      "practiceAreas": [],
+      "bio": [
+        "Alexis is the co-host and producer of The Eberst Law Podcast. On the show, she holds the viewer's point of view — asking the questions an injured Floridian would actually ask and translating any legal or insurance jargon the first time it appears. She is not an attorney and does not provide legal advice on the podcast.",
+        "Alexis runs the pre-show process: briefing Jonathon on each episode's scenario, pulling in the relevant Eberst Law Firm subject matter experts when an episode calls for a nursing home, medical malpractice, or hurricane damage deep dive, and making sure every segment connects back to a real problem Eberst clients walk in the door with."
+      ],
+      "memberships": [],
+      "socialLinks": [],
+      "episodeAppearances": "Co-host of all episodes",
+      "todo": "TODO: Confirm Alexis's last name, title, and headshot asset with the client before launch."
+    }
+  },
+  "awards": [],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Cold Open: This Isn't a Battle, This Is a War",
+      "active": true
+    },
+    {
+      "number": 2,
+      "title": "Meet Jonathon Eberst — Why This Firm Goes to Trial",
+      "active": false
+    },
+    {
+      "number": 3,
+      "title": "Topic Setup: The Florida Scenario",
+      "active": false
+    },
+    {
+      "number": 4,
+      "title": "Core Q&A: The Insurance Company's Playbook and How to Counter It",
+      "active": false
+    },
+    {
+      "number": 5,
+      "title": "Lightning Round: Biggest Mistakes, Biggest Secrets",
+      "active": false
+    },
+    {
+      "number": 6,
+      "title": "CTA & Outro: How to Reach The Eberst Law Firm",
+      "active": false
+    }
+  ],
+  "chaptersDescription": "Episode 1 introduces host Jonathon T. Eberst and co-host Alexis, lays out why a Florida-anchored injury podcast hosted by a trial lawyer is different from the typical 'we'll fight for you' PI show, and walks listeners through the real decisions Florida injury victims face in the first 72 hours after a car accident, trucking wreck, or denied insurance claim.",
+  "compliance": {
+    "jurisdiction": "Florida",
+    "firm": "The Eberst Law Firm",
+    "responsibleAttorneys": [
+      {
+        "name": "Jonathon Thompson Eberst",
+        "barNumber": "67925"
+      }
+    ],
+    "disclaimers": [
+      {
+        "kind": "attorney_advertising",
+        "text": "This podcast and website constitute attorney advertising under the Rules Regulating The Florida Bar, Chapter 4 (Rules of Professional Conduct), Subchapter 4-7 (Information About Legal Services). The information provided is for general informational purposes only and does not constitute legal advice."
+      },
+      {
+        "kind": "no_ac_relationship",
+        "text": "Viewing this site, listening to the podcast, or contacting The Eberst Law Firm does not create an attorney-client relationship. No attorney-client relationship exists unless and until a written fee agreement has been signed by both the client and the firm."
+      },
+      {
+        "kind": "prior_results",
+        "text": "Past results do not guarantee, warrant, or predict future outcomes. Every case is unique and must be evaluated on its own facts. Any recovery amounts referenced reflect outcomes in specific prior matters and should not be interpreted as a prediction of any outcome in your case."
+      },
+      {
+        "kind": "testimonial",
+        "text": "Any client testimonial or endorsement displayed on this site reflects the individual experience of that client, is not a guarantee of a similar result, and was not compensated in exchange for the statement. Testimonials comply with Rule 4-7.13 of the Rules Regulating The Florida Bar."
+      },
+      {
+        "kind": "jurisdictional",
+        "text": "Jonathon Thompson Eberst is licensed to practice law in the State of Florida (Bar No. 67925). Information on this site addresses Florida law and is not intended as a solicitation for legal services in any jurisdiction where The Eberst Law Firm's attorneys are not licensed to practice."
+      },
+      {
+        "kind": "fee_structure",
+        "text": "The Eberst Law Firm represents personal injury clients on a contingency-fee basis. No attorney's fees are charged unless a recovery is obtained. Clients may be responsible for case-related costs as set out in a written fee agreement. Fee structure is negotiable in accordance with Rule 4-1.5 of the Rules Regulating The Florida Bar."
+      },
+      {
+        "kind": "podcast_content",
+        "text": "Content shared on The Eberst Law Podcast is for general informational and educational purposes only, is not legal advice, and should not be relied upon as a substitute for consultation with a licensed Florida attorney about the specific facts of your matter."
+      }
+    ]
+  },
+  "contact": {
+    "address": "117 SE Seminole Street, Stuart, FL 34994",
+    "phone": "(772) 225-4900",
+    "tollFree": "1-888-CALL-JON",
+    "email": "jeberst@eberstlaw.com",
+    "website": "https://eberstlaw.com"
+  },
+  "content": {
+    "heroTitle": "The Eberst Law Podcast w. Jonathon T. Eberst",
+    "heroDescription": "Hosted by Jonathon T. Eberst — founding attorney of The Eberst Law Firm — and co-hosted by Alexis, this show gives injured Floridians on the east coast the insider view of how insurance companies actually value, fight, and try to minimize injury claims. Every episode takes one real Florida scenario — a rear-ending on A1A, a trucking wreck on I-95, a denied hurricane claim, a nursing home neglect case — and walks through it like a war room briefing: what the carrier is going to do, what they hope you don't know, and exactly how to build the strongest possible case.",
+    "articleTitle": "A Florida Injury Podcast That Treats Every Case Like It's Going to Trial",
+    "articleParagraphs": [
+      "Florida has more personal injury lawyers per capita than almost any state. Most of them settle. Most of their content sounds the same — some version of 'We'll fight for you.' The Eberst Law Podcast exists because Jonathon Eberst actually means it. Since founding the firm in 2009, he's built a team across three Florida offices — Stuart, Gainesville, and Daytona Beach — with a reputation insurance companies take seriously because they know this firm goes to trial.",
+      "Each episode anchors to a real scenario a Florida injury victim is navigating right now — a snowbird T-boned by a distracted driver on A1A, a construction worker hurt on a job site, a family whose grandmother is being neglected in a nursing home, a homeowner whose hurricane claim was denied. Jonathon breaks down the insurance company's tactics — delay, deny, lowball — and the counter-strategy, while Alexis drives the conversation from the viewer's perspective and translates legal and insurance jargon the first time it appears. Listeners walk out with the straight answers they couldn't find on Google and the understanding that in Florida's insurance landscape, this is a war — not a negotiation."
+    ],
+    "featuredQuote": "This isn't a battle, this is a war — and we're here to teach you how to win it.",
+    "additionalParagraphs": []
+  },
+  "episode": {
+    "number": 1,
+    "title": "What Every Florida Driver Needs to Know in the First 72 Hours After a Crash",
+    "date": "TBD",
+    "duration": "TBD",
+    "description": "In the debut episode of The Eberst Law Podcast, host Jonathon T. Eberst and co-host Alexis walk through exactly what an injured Floridian should do in the first 72 hours after a car accident — what to say (and not say) to the adjuster, why late-onset neck and back pain doesn't mean it's too late, how Florida's comparative fault rules actually work, and why insurance carriers open every file hoping you settle before you learn any of this. TODO: finalize title, description, and episode art from final recording and show notes."
+  },
+  "episodeLocations": [
+    "All",
+    "Florida",
+    "Stuart",
+    "Treasure Coast",
+    "Port St. Lucie",
+    "Fort Pierce",
+    "Jensen Beach",
+    "Hobe Sound",
+    "Palm City",
+    "Jupiter",
+    "Gainesville",
+    "Ocala",
+    "Daytona Beach",
+    "Port Orange",
+    "New Smyrna Beach"
+  ],
+  "episodeTopics": [
+    "All",
+    "Car Accidents",
+    "Truck Accidents",
+    "Motorcycle Accidents",
+    "Bicycle Accidents",
+    "Pedestrian Accidents",
+    "Slip and Fall",
+    "Wrongful Death",
+    "Brain Injuries",
+    "Nursing Home Abuse",
+    "Medical Malpractice",
+    "Hurricane Damage Claims",
+    "Florida Laws"
+  ],
+  "episodes": [
+    {
+      "id": 1,
+      "number": 1,
+      "title": "What Every Florida Driver Needs to Know in the First 72 Hours After a Crash",
+      "subtitle": "Episode 1 • The Eberst Law Firm",
+      "description": "Jonathon Eberst and Alexis walk through the decisions every injured Floridian has to make in the first 72 hours after a car accident — talking to the adjuster, documenting late-onset injuries, comparative fault, and why carriers hope you settle before you understand any of it. TODO: final description pulls from the recording.",
+      "duration": "TBD",
+      "date": "TBD",
+      "category": "Car Accidents",
+      "featured": true,
+      "topic": "Car Accidents",
+      "concepts": [
+        "Florida comparative fault",
+        "PIP and bodily injury coverage in Florida",
+        "Florida statute of limitations for injury claims",
+        "Talking to the adjuster",
+        "Late-onset neck and back injuries"
+      ],
+      "chapters": [
+        "Cold Open: This Isn't a Battle, This Is a War",
+        "Meet Jonathon Eberst — Why This Firm Goes to Trial",
+        "Topic Setup: The Florida Scenario",
+        "Core Q&A: The Insurance Company's Playbook and How to Counter It",
+        "Lightning Round: Biggest Mistakes, Biggest Secrets",
+        "CTA & Outro: How to Reach The Eberst Law Firm"
+      ],
+      "audioUrl": "",
+      "guid": "",
+      "logo": "/episode-art-1.jpg"
+    }
+  ],
+  "faqGroups": [
+    {
+      "label": "About the Podcast",
+      "description": "Learn more about The Eberst Law Podcast and what to expect from each episode.",
+      "questions": [
+        {
+          "question": "What topics does Jonathon Eberst cover on The Eberst Law Podcast?",
+          "level": "h2",
+          "answer": "Jonathon Eberst covers the full range of cases The Eberst Law Firm handles — car accidents, truck accidents, motorcycle accidents, bicycle and pedestrian accidents, slip and fall, wrongful death, and brain injuries, plus nursing home abuse, medical malpractice, and hurricane damage claims through other Eberst team members. Every episode anchors to Florida law and to the insurance landscape injured Floridians actually face, with co-host Alexis translating any legal or insurance jargon the first time it appears."
+        },
+        {
+          "question": "How often are new episodes released?",
+          "level": "h3",
+          "answer": "The Eberst Law Podcast publishes on a weekly, evergreen cadence. Episodes run 40 to 50 minutes each (target 45) and are organized by scenario and practice area — car accidents, trucking, nursing home, hurricane claims, medical malpractice — rather than numbered seasons."
+        },
+        {
+          "question": "Who is the target audience?",
+          "level": "h3",
+          "answer": "The show is built for injured Floridians on the east coast — from the Treasure Coast through Gainesville and Daytona Beach — who are dealing with Florida's aggressive insurance landscape. Secondary audiences include referring attorneys in other practice areas who need a PI firm that goes to trial, medical providers who treat injury patients, and insurance adjusters who want to understand how the Eberst team builds and presents a case."
+        },
+        {
+          "question": "Can I submit questions for the podcast?",
+          "level": "h3",
+          "answer": "Yes. Jonathon and Alexis welcome listener questions and case scenarios through eberstlaw.com. The show regularly addresses common questions from Florida accident victims and hurricane claim disputes, and many episodes are shaped directly by what listeners are asking. The podcast provides general legal information and cannot replace individualized legal advice about your specific matter."
+        }
+      ]
+    },
+    {
+      "label": "Florida Injury Claim Questions",
+      "description": "Common legal questions about Florida personal injury claims, insurance disputes, and trial work.",
+      "questions": [
+        {
+          "question": "How long do I have to file a personal injury claim in Florida?",
+          "level": "h2",
+          "answer": "Florida's statute of limitations for most negligence-based personal injury claims is generally two years from the date of the injury for causes of action that accrued on or after March 24, 2023, under recent Florida tort reform. Wrongful death claims and claims against government entities follow different, shorter deadlines. Because the rules changed recently and because notice-of-claim requirements can run out before the filing deadline, Jonathon recommends contacting an attorney promptly to preserve evidence and meet every applicable deadline."
+        },
+        {
+          "question": "What is comparative fault in Florida and how does it affect my case?",
+          "level": "h2",
+          "answer": "Florida follows a modified comparative negligence rule for most negligence claims: if you are more than 50% at fault, you generally cannot recover. If you are 50% or less at fault, your recovery is reduced by your share of responsibility. Adjusters will try to push your share as high as possible, because every percentage point they add subtracts from what they pay. A trial-ready plaintiff firm pushes back on that allocation with accident reconstruction, witness statements, and medical timelines."
+        },
+        {
+          "question": "My hurricane claim was denied. Can Eberst Law help?",
+          "level": "h3",
+          "answer": "Yes. The Eberst Law Firm handles first-party property and hurricane damage disputes in Florida. Denials and lowball offers are common when adjusters quote repair numbers that are a fraction of what contractors will actually charge. Florida has specific notice and supplemental-claim rules for hurricane losses, and the Eberst team walks homeowners through those deadlines and builds the evidence package needed to push a carrier to pay what the policy actually owes."
+        },
+        {
+          "question": "What if the other driver was uninsured or underinsured?",
+          "level": "h3",
+          "answer": "Florida drivers are required to carry Personal Injury Protection (PIP) and Property Damage Liability (PDL) but are not required to carry Bodily Injury (BI) coverage. If the at-fault driver has no BI coverage or not enough to cover your injuries, Uninsured/Underinsured Motorist (UM/UIM) coverage on your own policy — or on another household policy — may step in. Jonathon covers UM/UIM in multiple episodes because it is one of the most misunderstood pieces of Florida car insurance law."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "logo": "The Eberst Law Firm",
+    "description": "The Eberst Law Podcast is a weekly show for injured Floridians on the east coast dealing with car accidents, trucking wrecks, nursing home abuse, medical malpractice, and hurricane damage claims. Hosted by The Eberst Law Firm founding attorney Jonathon T. Eberst and co-hosted by Alexis, every episode anchors to Florida law and the real insurance landscape victims are up against.",
+    "copyright": "The Eberst Law Firm",
+    "socialLinks": {
+      "twitter": "#",
+      "linkedin": "#",
+      "facebook": "#",
+      "instagram": "#",
+      "youtube": "#"
+    }
+  },
+  "formConfig": {
+    "webhookUrl": "",
+    "notifyEmails": "jeberst@eberstlaw.com",
+    "fields": [
+      {
+        "name": "name",
+        "label": "NAME",
+        "type": "text",
+        "placeholder": "Enter Your Name",
+        "required": true,
+        "halfWidth": true
+      },
+      {
+        "name": "email",
+        "label": "EMAIL",
+        "type": "email",
+        "placeholder": "Enter Your Email",
+        "required": true,
+        "halfWidth": true
+      },
+      {
+        "name": "phone",
+        "label": "PHONE",
+        "type": "tel",
+        "placeholder": "Enter Your Phone Number",
+        "required": false,
+        "halfWidth": true
+      },
+      {
+        "name": "caseType",
+        "label": "CASE TYPE",
+        "type": "select",
+        "placeholder": "Select Case Type",
+        "required": false,
+        "halfWidth": true,
+        "options": [
+          "Car Accident",
+          "Truck Accident",
+          "Motorcycle Accident",
+          "Bicycle or Pedestrian Accident",
+          "Slip and Fall",
+          "Wrongful Death",
+          "Brain Injury",
+          "Nursing Home Abuse",
+          "Medical Malpractice",
+          "Hurricane Damage Claim",
+          "Other"
+        ]
+      },
+      {
+        "name": "message",
+        "label": "MESSAGE",
+        "type": "textarea",
+        "placeholder": "Briefly describe your situation",
+        "required": true,
+        "halfWidth": false
+      }
+    ],
+    "heading": "Get in touch now!",
+    "submitText": "Send Message",
+    "successMessage": "Thank you! Your message has been sent. The Eberst Law Firm will get back to you promptly.",
+    "errorMessage": "Something went wrong. Please call us directly at (772) 225-4900 or toll-free at 1-888-CALL-JON.",
+    "source": "podcast-website",
+    "campaign": "eberst-law-podcast-ep-1"
+  },
+  "navigation": {
+    "logo": "The Eberst Law Firm",
+    "items": [
+      {
+        "name": "Episodes",
+        "href": "#episodes"
+      },
+      {
+        "name": "About",
+        "href": "#about"
+      },
+      {
+        "name": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "ctaText": "Subscribe",
+    "ctaHref": "#subscribe"
+  },
+  "offices": [
+    {
+      "name": "Stuart Office (Headquarters)",
+      "address": "117 SE Seminole Street",
+      "city": "Stuart",
+      "state": "FL",
+      "zip": "34994",
+      "phone": "(772) 225-4900"
+    },
+    {
+      "name": "Gainesville Office",
+      "address": "716 E. University Avenue",
+      "city": "Gainesville",
+      "state": "FL",
+      "zip": "32601",
+      "phone": "(772) 225-4900"
+    },
+    {
+      "name": "Daytona Beach Office",
+      "address": "523 W. International Speedway Blvd",
+      "city": "Daytona Beach",
+      "state": "FL",
+      "zip": "32114",
+      "phone": "(772) 225-4900"
+    }
+  ],
+  "podcastTeam": [
+    {
+      "name": "Jonathon T. Eberst",
+      "role": "Host & Founding Attorney",
+      "photo": "/attorney-1.avif",
+      "slug": "jonathon-eberst",
+      "bio": "Jonathon T. Eberst is the founding attorney of The Eberst Law Firm and host of The Eberst Law Podcast. Florida Bar No. 67925. Super Lawyers 2024–2025, National Top 100 Trial Lawyers, Best Trial Lawyer in America 2022. Known for willingness to take cases to trial.",
+      "episodes": "Host of all episodes"
+    },
+    {
+      "name": "Alexis",
+      "role": "Co-Host & Producer",
+      "photo": "/attorney-2.avif",
+      "slug": "alexis",
+      "bio": "Alexis co-hosts The Eberst Law Podcast and runs the pre-show process. She holds the viewer's point of view on the show — asking the questions an injured Floridian would actually ask and translating legal or insurance jargon the first time it appears. Not an attorney.",
+      "episodes": "Co-host of all episodes"
+    }
+  ],
+  "reviewsInstruction": "Testimonials are populated only from verified third-party review platforms (Google Business Profile). Per Rule 4-7.13 of the Rules Regulating The Florida Bar, testimonials must reflect actual client experiences and cannot guarantee a similar result in any other case.",
+  "rotationAttorneys": [
+    {
+      "name": "Alexis",
+      "slug": "alexis",
+      "bio_source": "Podcast Overview — producer/co-host",
+      "education": {
+        "degree": "",
+        "school": "",
+        "year": ""
+      },
+      "admissions": [],
+      "awards": [],
+      "todo": "TODO: Confirm Alexis's last name, job title, headshot asset, and whether she should be added to Supabase client_attorneys (she is not an attorney, so likely a separate 'podcast_team' record)."
+    }
+  ],
+  "siteConfig": {
+    "podcastName": "The Eberst Law Podcast",
+    "attorneyHandle": "",
+    "tagline": "This isn't a battle, this is a war — and we're here to teach you how to win it.",
+    "taglineCandidates": [
+      "This isn't a battle, this is a war — and we're here to teach you how to win it."
+    ],
+    "taglineNote": "Tagline pulled verbatim from the Eberst Podcast Overview brief. No alternatives requested by the client.",
+    "podcastUrl": "https://podcast-floridacaraccidentlawyer.vercel.app",
+    "rssFeedUrl": "",
+    "rssFeedUrlNote": "TODO: Eberst podcast RSS feed is not yet available as of 2026-04-23. User confirmed the feed will not be ready today. Leave blank and populate when the hosting provider (Flightcast / Transistor / Buzzsprout / etc.) publishes the feed URL.",
+    "format": "Interview-based, video-first (recorded on Riverside.fm)",
+    "episodeLengthMinutes": "40-50",
+    "cadence": "Weekly, evergreen",
+    "platformLinks": {
+      "apple": "#",
+      "spotify": "#"
+    },
+    "formCTA": {
+      "text": "Free Consultation",
+      "href": "#form"
+    }
+  },
+  "stats": {
+    "rating": 5.0,
+    "reviewCount": 35,
+    "satisfactionRate": 0,
+    "satisfactionLabel": "",
+    "satisfactionVerbalization": "TODO: Populate from verified third-party review platform data before launch. Per Rule 4-7.13 of the Rules Regulating The Florida Bar, numeric claims about client satisfaction require substantiation.",
+    "casesHandled": 1,
+    "casesLabel": "$1M+ Car Accident Recovery",
+    "casesVerbalization": "The Eberst Law Firm has recovered over $1 million in individual car accident settlements, including a $1.26 million car accident settlement and a $510,000 spine injury recovery. Past results do not guarantee, warrant, or predict future outcomes.",
+    "ratingVerbalization": "5.0 star rating across 35 Google reviews (per firm-supplied data). Per Rule 4-7.13 of the Rules Regulating The Florida Bar, star-rating claims should be substantiated by a verifiable third-party source before public publication; TODO: confirm current Google Business Profile counts before launch."
+  },
+  "subscribeCTA": {
+    "title": "Never Miss an Episode",
+    "description": "Subscribe to The Eberst Law Podcast to get the war-room view of how Florida injury and insurance claims actually get valued, fought, and paid. Each weekly episode anchors to Florida law and to the real east-coast Florida scenarios — Treasure Coast car accidents, I-95 trucking wrecks, nursing home abuse, denied hurricane claims — with plain-language answers from a trial lawyer and a co-host who translates the jargon as it comes up.",
+    "highlights": [
+      "War-room breakdowns of real Florida injury and insurance scenarios",
+      "Florida-anchored law — comparative fault, PIP/BI/UM-UIM, hurricane claim rules, Florida Bar Rule 4-7",
+      "Coverage across PI, nursing home abuse, medical malpractice, and hurricane damage claims",
+      "First-72-hour, first-30-day, and pre-litigation decision frameworks for every claim",
+      "Answers to listener questions about real east-coast Florida scenarios"
+    ]
+  },
+  "testimonials": [],
+  "topicalEntryGrid": {
+    "title": "Explore Topics Covered on the Podcast",
+    "description": "Browse the Florida injury and insurance topics Jonathon Eberst covers on the show. Each card links to a deeper resource from The Eberst Law Firm on that situation.",
+    "tabs": [
+      {
+        "label": "Car Accidents",
+        "links": [
+          {
+            "title": "Rear-End Collisions on Florida Roads",
+            "description": "What a rear-end case on A1A, I-95, or the Florida Turnpike is actually worth, how Florida's comparative fault rule applies, and what adjusters look for when they evaluate liability.",
+            "href": "#rear-end-collisions"
+          },
+          {
+            "title": "Intersection Accidents and Right-of-Way",
+            "description": "Florida right-of-way rules, how fault gets established at busy east-coast intersections, and what evidence carries the most weight with adjusters and juries.",
+            "href": "#intersection-accidents"
+          },
+          {
+            "title": "Uninsured and Underinsured Motorist Claims in Florida",
+            "description": "How Florida UM/UIM coverage actually works, why BI coverage is not mandatory in Florida, and why this is one of the most misunderstood parts of a Florida claim.",
+            "href": "#uninsured-motorist"
+          },
+          {
+            "title": "Late-Onset Neck and Back Injuries",
+            "description": "Why soft-tissue pain often does not show up until 48 to 72 hours after the crash, what that means for your claim, and how to document it so the adjuster cannot dismiss it.",
+            "href": "#late-onset-injuries"
+          }
+        ]
+      },
+      {
+        "label": "Truck Accidents",
+        "links": [
+          {
+            "title": "I-95 and Florida Turnpike Trucking Wrecks",
+            "description": "How federal Motor Carrier Safety Regulations interact with Florida law, and why commercial truck cases routinely involve multiple liable parties beyond the driver.",
+            "href": "#truck-regulations"
+          },
+          {
+            "title": "Truck Driver Fatigue Cases",
+            "description": "Hours-of-service violations, ELD logs, and how driver fatigue on long-haul routes through Florida drives liability and damages in commercial truck cases.",
+            "href": "#driver-fatigue"
+          },
+          {
+            "title": "Multiple Liable Parties in Trucking",
+            "description": "Driver, carrier, broker, loader, maintenance contractor, manufacturer — how to identify every potentially responsible defendant in a Florida commercial truck case.",
+            "href": "#multiple-parties"
+          }
+        ]
+      },
+      {
+        "label": "Nursing Home & Med Mal",
+        "links": [
+          {
+            "title": "Nursing Home Neglect and Abuse in Florida",
+            "description": "Bedsores, weight loss, medication errors, and facility understaffing — how Florida's Assisted Living and Nursing Home statutes define a case and what evidence actually moves the claim.",
+            "href": "#nursing-home"
+          },
+          {
+            "title": "Medical Malpractice Claims in Florida",
+            "description": "Florida's pre-suit investigation requirements, expert affidavits, and the statute of limitations for med mal — and why so many injured Floridians run out of time before they ever talk to a lawyer.",
+            "href": "#medical-malpractice"
+          }
+        ]
+      },
+      {
+        "label": "Hurricane Damage Claims",
+        "links": [
+          {
+            "title": "Denied Hurricane Claims in Florida",
+            "description": "Why carriers deny or low-ball hurricane claims, how Florida's notice-of-claim and supplemental-claim rules work, and how to build the case that forces full payment.",
+            "href": "#hurricane-denied"
+          },
+          {
+            "title": "Underpayment and Roof Damage Disputes",
+            "description": "When a carrier's estimate is a fraction of actual repair costs, what evidence Florida law requires you to preserve, and how a first-party property attorney closes the gap.",
+            "href": "#hurricane-underpayment"
+          }
+        ]
+      },
+      {
+        "label": "Motorcycle, Bike & Pedestrian",
+        "links": [
+          {
+            "title": "Motorcycle Accidents on A1A and Florida Highways",
+            "description": "Bias against riders, how to prove fault with accident reconstructionists, and why motorcycle cases require a firm that has taken them to trial.",
+            "href": "#motorcycle-accidents"
+          },
+          {
+            "title": "Bicycle and Pedestrian Crashes",
+            "description": "Florida bicycle and pedestrian right-of-way rules, how fault gets proved in crosswalk and bike-lane cases, and why the first 72 hours of medical documentation matter so much.",
+            "href": "#bike-pedestrian"
+          }
+        ]
+      }
+    ]
+  },
+  "trustBadges": []
+}

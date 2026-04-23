@@ -4,32 +4,36 @@
 
 :root {
   /* ========== COLORS ========== */
-  /* Primary Colors */
-  --color-primary: #070519;
-  --color-secondary: #FAA31A;
+  /* The Eberst Law Firm brand palette — sourced from Elementor kit vars in
+     the firm's WordPress site (wp-content/uploads/elementor/css/post-10.css)
+     via Supabase clients.brand_guidelines. Near-black navy + gold. */
+  --color-primary: #1E232B;          /* near-black — headers, dark sections, body copy */
+  --color-secondary: #ECBE13;        /* firm gold — CTAs, buttons, accents */
+  --color-secondary-hover: #C79F0A;  /* darker gold for hover states */
+  --color-accent-dark: #0F1216;      /* deeper near-black — dark-bg overlays */
 
   /* Accent & Neutral Colors */
-  --color-accent: #c9c9c9;
+  --color-accent: #ECBE13;
   --color-background: #ffffff;
-  --color-foreground: #000000;
+  --color-foreground: #1E232B;
 
   /* Muted Colors */
-  --color-muted: #f1f2f4;
-  --color-muted-foreground: #676767;
+  --color-muted: #F3F4F6;
+  --color-muted-foreground: #4A5260;
 
   /* Card Colors */
-  --color-card: #eeeef0;
-  --color-card-foreground: #151823;
+  --color-card: #F3F4F6;
+  --color-card-foreground: #1E232B;
 
   /* Border & Divider */
   --color-border: #d9d9d9;
 
   /* Additional UI Colors */
-  --color-gray-dark: #6f6f6f;
-  --color-gray-light: #9e9e9e;
-  --color-gray-lighter: #616161;
+  --color-gray-dark: #2E3440;
+  --color-gray-light: #9aa0aa;
+  --color-gray-lighter: #6c7280;
   --color-beige: #e1dddc;
-  --color-dark-bg: #070519;
+  --color-dark-bg: #0F1216;
 
   /* ========== TYPOGRAPHY ========== */
   --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
