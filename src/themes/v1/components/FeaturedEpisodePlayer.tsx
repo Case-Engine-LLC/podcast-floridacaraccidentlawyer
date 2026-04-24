@@ -57,7 +57,7 @@ const FeaturedEpisodePlayer = ({
         </div>
 
         {/* Description */}
-        <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+        <p className="episode-description text-sm text-gray-600 mb-4 leading-relaxed">
           {description}
         </p>
 
