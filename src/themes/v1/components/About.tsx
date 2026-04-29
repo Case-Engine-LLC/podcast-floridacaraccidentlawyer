@@ -73,7 +73,7 @@ const About = () => {
             <div className="mt-6 flex justify-center md:justify-start">
               <Link
                 href={siteConfig.formCTA?.href || '#form'}
-                className="inline-flex items-center gap-3 bg-secondary text-black px-8 py-4 rounded-2xl transition-transform hover:scale-105 font-bold"
+                className="inline-flex items-center gap-3 bg-secondary text-white px-8 py-4 rounded-2xl transition-transform hover:scale-105 font-bold"
               >
                 <FileText className="w-5 h-5" />
                 <span>{siteConfig.formCTA?.text || 'Free Consultation'}</span>

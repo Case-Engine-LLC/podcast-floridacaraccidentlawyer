@@ -33,7 +33,7 @@ const Footer = () => {
           {/* Left Column - Logo & Social */}
           <div>
             <div className="mb-6">
-              <span className="text-2xl font-bold tracking-tight text-white">{footer.logo}</span>
+              <img src="/logo.svg" alt={footer.logo} className="h-14 md:h-16 w-auto object-contain" />
             </div>
             <p className="text-base text-white/70 leading-relaxed mb-8 max-w-md">
               {footer.description}
