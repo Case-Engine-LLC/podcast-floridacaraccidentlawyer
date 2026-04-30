@@ -17,6 +17,16 @@ const Footer = () => {
             <p className="text-slate-500 text-sm leading-relaxed mb-6">
               {footer.description}
             </p>
+            {contact.website && (
+              <a
+                href={contact.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-sm font-semibold text-amber-400 hover:text-white transition-colors mb-6"
+              >
+                Visit {attorney.firm} →
+              </a>
+            )}
             <div className="flex gap-4">
               {footer.socialLinks.twitter && (
                 <a href={footer.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
@@ -57,6 +67,18 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-6">Resources</h4>
             <ul className="space-y-4 text-sm text-slate-400">
+              {contact.website && (
+                <li>
+                  <a
+                    href={contact.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-amber-500 transition-colors"
+                  >
+                    Eberst Law Firm Website
+                  </a>
+                </li>
+              )}
               <li><a href={`tel:${contact.phone}`} className="hover:text-amber-500 transition-colors">Contact Attorneys</a></li>
             </ul>
           </div>
