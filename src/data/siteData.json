@@ -517,7 +517,7 @@
     "firmUrl": "https://eberstlaw.com"
   },
   "stats": {
-    "rating": 5.0,
+    "rating": 5,
     "reviewCount": 35,
     "satisfactionRate": 0,
     "satisfactionLabel": "",
@@ -548,23 +548,23 @@
         "links": [
           {
             "title": "Rear-End Collisions on Florida Roads",
-            "description": "What a rear-end case on A1A, I-95, or the Florida Turnpike is actually worth, how Florida's comparative fault rule applies, and what adjusters look for when they evaluate liability.",
-            "href": "#rear-end-collisions"
+            "description": "Most common Florida crash type — Eberst Law handles whiplash, soft-tissue, and high-speed rear-end collision claims across Stuart, Daytona Beach, and Gainesville.",
+            "href": "https://eberstlaw.com/rear-end-collision/"
           },
           {
-            "title": "Intersection Accidents and Right-of-Way",
-            "description": "Florida right-of-way rules, how fault gets established at busy east-coast intersections, and what evidence carries the most weight with adjusters and juries.",
-            "href": "#intersection-accidents"
+            "title": "Florida Car Accident Claims",
+            "description": "Stuart, Daytona Beach, and Gainesville drivers turn to Eberst Law for serious injury claims involving disputed liability and uninsured drivers.",
+            "href": "https://eberstlaw.com/car-accidents/"
           },
           {
-            "title": "Uninsured and Underinsured Motorist Claims in Florida",
-            "description": "How Florida UM/UIM coverage actually works, why BI coverage is not mandatory in Florida, and why this is one of the most misunderstood parts of a Florida claim.",
-            "href": "#uninsured-motorist"
+            "title": "Uninsured and Underinsured Motorist Claims",
+            "description": "Florida UM/UIM coverage is critical when the at-fault driver carries minimum or no insurance. Eberst Law pursues full recovery from your own policy.",
+            "href": "https://eberstlaw.com/uninsured-or-underinsured-motorists/"
           },
           {
             "title": "Late-Onset Neck and Back Injuries",
-            "description": "Why soft-tissue pain often does not show up until 48 to 72 hours after the crash, what that means for your claim, and how to document it so the adjuster cannot dismiss it.",
-            "href": "#late-onset-injuries"
+            "description": "Whiplash and soft-tissue injuries from auto accidents often emerge days after the crash. Eberst Law documents the medical timeline insurers try to discount.",
+            "href": "https://eberstlaw.com/whiplash-injury-lawyer/"
           }
         ]
       },
@@ -573,18 +573,18 @@
         "links": [
           {
             "title": "I-95 and Florida Turnpike Trucking Wrecks",
-            "description": "How federal Motor Carrier Safety Regulations interact with Florida law, and why commercial truck cases routinely involve multiple liable parties beyond the driver.",
-            "href": "#truck-regulations"
+            "description": "Tractor-trailer collisions on Florida's major corridors involve federal motor carrier rules, multiple defendants, and catastrophic injuries.",
+            "href": "https://eberstlaw.com/tractor-trailer-accident/"
           },
           {
-            "title": "Truck Driver Fatigue Cases",
-            "description": "Hours-of-service violations, ELD logs, and how driver fatigue on long-haul routes through Florida drives liability and damages in commercial truck cases.",
-            "href": "#driver-fatigue"
+            "title": "Distracted and Fatigued Truck Drivers",
+            "description": "Hours-of-service violations and driver fatigue cause some of the worst Florida trucking crashes. Eberst Law subpoenas logs and ELD data to prove it.",
+            "href": "https://eberstlaw.com/distracted-driving-accident/"
           },
           {
             "title": "Multiple Liable Parties in Trucking",
-            "description": "Driver, carrier, broker, loader, maintenance contractor, manufacturer, how to identify every potentially responsible defendant in a Florida commercial truck case.",
-            "href": "#multiple-parties"
+            "description": "Truck accident defendants can include the driver, the carrier, the broker, and the cargo loader. Eberst Law identifies every responsible party.",
+            "href": "https://eberstlaw.com/practice-areas/"
           }
         ]
       },
@@ -593,13 +593,13 @@
         "links": [
           {
             "title": "Nursing Home Neglect and Abuse in Florida",
-            "description": "Bedsores, weight loss, medication errors, and facility understaffing, how Florida's Assisted Living and Nursing Home statutes define a case and what evidence actually moves the claim.",
-            "href": "#nursing-home"
+            "description": "Florida nursing home residents and families have rights under state and federal law. Eberst Law handles abuse, neglect, and wrongful death claims.",
+            "href": "https://eberstlaw.com/nursing-home-abuse/"
           },
           {
             "title": "Medical Malpractice Claims in Florida",
-            "description": "Florida's pre-suit investigation requirements, expert affidavits, and the statute of limitations for med mal, and why so many injured Floridians run out of time before they ever talk to a lawyer.",
-            "href": "#medical-malpractice"
+            "description": "Misdiagnosis, surgical errors, birth injuries, and medication mistakes. Eberst Law works with Florida medical experts to prove negligence.",
+            "href": "https://eberstlaw.com/medical-malpractices/"
           }
         ]
       },
@@ -607,14 +607,14 @@
         "label": "Hurricane Damage Claims",
         "links": [
           {
-            "title": "Denied Hurricane Claims in Florida",
-            "description": "Why carriers deny or low-ball hurricane claims, how Florida's notice-of-claim and supplemental-claim rules work, and how to build the case that forces full payment.",
-            "href": "#hurricane-denied"
+            "title": "Denied Hurricane Insurance Claims",
+            "description": "Florida insurers routinely deny or delay hurricane property claims. Eberst Law fights bad-faith denials across Stuart, Daytona Beach, and Gainesville.",
+            "href": "https://eberstlaw.com/gainesville-home-insurance-claims/"
           },
           {
             "title": "Underpayment and Roof Damage Disputes",
-            "description": "When a carrier's estimate is a fraction of actual repair costs, what evidence Florida law requires you to preserve, and how a first-party property attorney closes the gap.",
-            "href": "#hurricane-underpayment"
+            "description": "When the carrier's payout doesn't cover the actual cost of roof or structural repairs, Eberst Law forces the insurer to honor the policy.",
+            "href": "https://eberstlaw.com/gainesville-home-insurance-claims/"
           }
         ]
       },
@@ -623,13 +623,18 @@
         "links": [
           {
             "title": "Motorcycle Accidents on A1A and Florida Highways",
-            "description": "Bias against riders, how to prove fault with accident reconstructionists, and why motorcycle cases require a firm that has taken them to trial.",
-            "href": "#motorcycle-accidents"
+            "description": "Florida motorcycle riders face insurer bias and disputed fault. Eberst Law pushes back on assumptions about rider conduct and pursues full damages.",
+            "href": "https://eberstlaw.com/motorcycle-accident/"
           },
           {
-            "title": "Bicycle and Pedestrian Crashes",
-            "description": "Florida bicycle and pedestrian right-of-way rules, how fault gets proved in crosswalk and bike-lane cases, and why the first 72 hours of medical documentation matter so much.",
-            "href": "#bike-pedestrian"
+            "title": "Bicycle Crashes in Florida",
+            "description": "Cyclists struck by drivers in Stuart, Daytona Beach, and Gainesville have rights under Florida traffic law. Eberst Law investigates from scene to courtroom.",
+            "href": "https://eberstlaw.com/bike-accidents/"
+          },
+          {
+            "title": "Pedestrian Strikes",
+            "description": "Pedestrian collisions often involve disputed fault and driver distraction. Eberst Law builds the case using witnesses, video, and accident reconstruction.",
+            "href": "https://eberstlaw.com/pedestrian-accidents/"
           }
         ]
       }
