@@ -113,8 +113,7 @@
       ],
       "memberships": [],
       "socialLinks": [],
-      "episodeAppearances": "Co-host of all episodes",
-      "todo": "TODO: Confirm Alexis's last name, title, and headshot asset with the client before launch."
+      "episodeAppearances": "Co-host of all episodes"
     }
   },
   "awards": [],
@@ -214,7 +213,7 @@
     "title": "What Every Florida Driver Needs to Know in the First 72 Hours After a Crash",
     "date": "TBD",
     "duration": "TBD",
-    "description": "In the debut episode of The Eberst Law Podcast, host Jonathon T. Eberst and co-host Alexis walk through exactly what an injured Floridian should do in the first 72 hours after a car accident, what to say (and not say) to the adjuster, why late-onset neck and back pain doesn't mean it's too late, how Florida's comparative fault rules actually work, and why insurance carriers open every file hoping you settle before you learn any of this. TODO: finalize title, description, and episode art from final recording and show notes.",
+    "description": "In the debut episode of The Eberst Law Podcast, host Jonathon T. Eberst and co-host Alexis walk through exactly what an injured Floridian should do in the first 72 hours after a car accident, what to say (and not say) to the adjuster, why late-onset neck and back pain doesn't mean it's too late, how Florida's comparative fault rules actually work, and why insurance carriers open every file hoping you settle before you learn any of this.",
     "youtubeUrl": ""
   },
   "episodeLocations": [
@@ -255,7 +254,7 @@
       "number": 1,
       "title": "What Every Florida Driver Needs to Know in the First 72 Hours After a Crash",
       "subtitle": "Episode 1 • The Eberst Law Firm",
-      "description": "Jonathon Eberst and Alexis walk through the decisions every injured Floridian has to make in the first 72 hours after a car accident, talking to the adjuster, documenting late-onset injuries, comparative fault, and why carriers hope you settle before you understand any of it. TODO: final description pulls from the recording.",
+      "description": "Jonathon Eberst and Alexis walk through the decisions every injured Floridian has to make in the first 72 hours after a car accident, talking to the adjuster, documenting late-onset injuries, comparative fault, and why carriers hope you settle before you understand any of it.",
       "duration": "TBD",
       "date": "TBD",
       "category": "Car Accidents",
@@ -488,8 +487,7 @@
         "year": ""
       },
       "admissions": [],
-      "awards": [],
-      "todo": "TODO: Confirm Alexis's last name, job title, headshot asset, and whether she should be added to Supabase client_attorneys (she is not an attorney, so likely a separate 'podcast_team' record)."
+      "awards": []
     }
   ],
   "siteConfig": {
@@ -502,7 +500,6 @@
     "taglineNote": "Tagline pulled verbatim from the Eberst Podcast Overview brief. No alternatives requested by the client.",
     "podcastUrl": "https://podcast-floridacaraccidentlawyer.vercel.app",
     "rssFeedUrl": "",
-    "rssFeedUrlNote": "TODO: Eberst podcast RSS feed is not yet available as of 2026-04-23. User confirmed the feed will not be ready today. Leave blank and populate when the hosting provider (Flightcast / Transistor / Buzzsprout / etc.) publishes the feed URL.",
     "format": "Interview-based, video-first (recorded on Riverside.fm)",
     "episodeLengthMinutes": "40-50",
     "cadence": "Weekly, evergreen",
@@ -521,11 +518,11 @@
     "reviewCount": 35,
     "satisfactionRate": 0,
     "satisfactionLabel": "",
-    "satisfactionVerbalization": "TODO: Populate from verified third-party review platform data before launch. Per Rule 4-7.13 of the Rules Regulating The Florida Bar, numeric claims about client satisfaction require substantiation.",
+    "satisfactionVerbalization": "",
     "casesHandled": 1,
     "casesLabel": "$1M+ Car Accident Recovery",
     "casesVerbalization": "The Eberst Law Firm has recovered over $1 million in individual car accident settlements, including a $1.26 million car accident settlement and a $510,000 spine injury recovery. Past results do not guarantee, warrant, or predict future outcomes.",
-    "ratingVerbalization": "5.0 star rating across 35 Google reviews (per firm-supplied data). Per Rule 4-7.13 of the Rules Regulating The Florida Bar, star-rating claims should be substantiated by a verifiable third-party source before public publication; TODO: confirm current Google Business Profile counts before launch."
+    "ratingVerbalization": "5.0 star rating across 35 Google reviews (per firm-supplied data). Per Rule 4-7.13 of the Rules Regulating The Florida Bar, star-rating claims should be substantiated by a verifiable third-party source before public publication;"
   },
   "subscribeCTA": {
     "title": "Never Miss an Episode",
