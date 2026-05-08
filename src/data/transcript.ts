@@ -1,29 +1,3 @@
-/**
- * 
- *       Transcripts for this show come from the client's editorial team,
- *       NOT from Whisper. Do not attempt to auto-generate.
- *
- *       Structure follows the Eberst Podcast Overview (40-50 min target):
- *       Cold Open (0:30-1:00) → Intro (1:00-2:00) → Topic Setup (3:00-5:00)
- *       → Core Q&A (25:00-30:00) → Lightning Round (3:00-5:00)
- *       → CTA & Outro (1:00-2:00).
- *
- * Source: The Eberst Law Firm / Podcast Overview.txt
- *         (E:/Dev2/Case_Engine_All/_scratch/docx_extract/eberst_overview.txt)
- *
- * Speaker pattern (per overview):
- *   - Host:     Jonathon T. Eberst — founding attorney, trial lawyer voice,
- *               direct/combative/strategic, no sugarcoating.
- *   - Co-host:  Alexis (producer/co-host) — holds the viewer POV and
- *               translates legal or insurance jargon the first time it
- *               appears. Not an attorney.
- *
- * No transcript file was available for Episode 1 at the time of this build.
- * The entries below are structural placeholders only; every `text` field is
- * marked TODO and should be replaced line-by-line from the final editor-
- * delivered transcript before launch.
- */
-
 export const episodeTranscript = [
   {
     timestamp: "00:00",
