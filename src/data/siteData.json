@@ -546,22 +546,26 @@
           {
             "title": "Rear-End Collisions on Florida Roads",
             "description": "Most common Florida crash type â€” Eberst Law handles whiplash, soft-tissue, and high-speed rear-end collision claims across Stuart, Daytona Beach, and Gainesville.",
-            "href": "https://eberstlaw.com/rear-end-collision/"
+            "href": "https://eberstlaw.com/rear-end-collision/",
+            "image": "/topical/icon-pa-car.svg"
           },
           {
             "title": "Florida Car Accident Claims",
             "description": "Stuart, Daytona Beach, and Gainesville drivers turn to Eberst Law for serious injury claims involving disputed liability and uninsured drivers.",
-            "href": "https://eberstlaw.com/car-accidents/"
+            "href": "https://eberstlaw.com/car-accidents/",
+            "image": "/topical/icon-svc-liability.svg"
           },
           {
             "title": "Uninsured and Underinsured Motorist Claims",
             "description": "Florida UM/UIM coverage is critical when the at-fault driver carries minimum or no insurance. Eberst Law pursues full recovery from your own policy.",
-            "href": "https://eberstlaw.com/uninsured-or-underinsured-motorists/"
+            "href": "https://eberstlaw.com/uninsured-or-underinsured-motorists/",
+            "image": "/topical/icon-svc-insurance.svg"
           },
           {
             "title": "Late-Onset Neck and Back Injuries",
             "description": "Whiplash and soft-tissue injuries from auto accidents often emerge days after the crash. Eberst Law documents the medical timeline insurers try to discount.",
-            "href": "https://eberstlaw.com/whiplash-injury-lawyer/"
+            "href": "https://eberstlaw.com/whiplash-injury-lawyer/",
+            "image": "/topical/icon-pa-medical.svg"
           }
         ]
       },
@@ -571,17 +575,20 @@
           {
             "title": "I-95 and Florida Turnpike Trucking Wrecks",
             "description": "Tractor-trailer collisions on Florida's major corridors involve federal motor carrier rules, multiple defendants, and catastrophic injuries.",
-            "href": "https://eberstlaw.com/tractor-trailer-accident/"
+            "href": "https://eberstlaw.com/tractor-trailer-accident/",
+            "image": "/topical/icon-pa-truck.svg"
           },
           {
             "title": "Distracted and Fatigued Truck Drivers",
             "description": "Hours-of-service violations and driver fatigue cause some of the worst Florida trucking crashes. Eberst Law subpoenas logs and ELD data to prove it.",
-            "href": "https://eberstlaw.com/distracted-driving-accident/"
+            "href": "https://eberstlaw.com/distracted-driving-accident/",
+            "image": "/topical/icon-svc-investigate.svg"
           },
           {
             "title": "Multiple Liable Parties in Trucking",
             "description": "Truck accident defendants can include the driver, the carrier, the broker, and the cargo loader. Eberst Law identifies every responsible party.",
-            "href": "https://eberstlaw.com/practice-areas/"
+            "href": "https://eberstlaw.com/practice-areas/",
+            "image": "/topical/icon-svc-liability.svg"
           }
         ]
       },
@@ -591,12 +598,14 @@
           {
             "title": "Nursing Home Neglect and Abuse in Florida",
             "description": "Florida nursing home residents and families have rights under state and federal law. Eberst Law handles abuse, neglect, and wrongful death claims.",
-            "href": "https://eberstlaw.com/nursing-home-abuse/"
+            "href": "https://eberstlaw.com/nursing-home-abuse/",
+            "image": "/topical/icon-pa-wrongful-death.svg"
           },
           {
             "title": "Medical Malpractice Claims in Florida",
             "description": "Misdiagnosis, surgical errors, birth injuries, and medication mistakes. Eberst Law works with Florida medical experts to prove negligence.",
-            "href": "https://eberstlaw.com/medical-malpractices/"
+            "href": "https://eberstlaw.com/medical-malpractices/",
+            "image": "/topical/icon-pa-medical.svg"
           }
         ]
       },
@@ -606,12 +615,14 @@
           {
             "title": "Denied Hurricane Insurance Claims",
             "description": "Florida insurers routinely deny or delay hurricane property claims. Eberst Law fights bad-faith denials across Stuart, Daytona Beach, and Gainesville.",
-            "href": "https://eberstlaw.com/gainesville-home-insurance-claims/"
+            "href": "https://eberstlaw.com/gainesville-home-insurance-claims/",
+            "image": "/topical/icon-svc-insurance.svg"
           },
           {
             "title": "Underpayment and Roof Damage Disputes",
             "description": "When the carrier's payout doesn't cover the actual cost of roof or structural repairs, Eberst Law forces the insurer to honor the policy.",
-            "href": "https://eberstlaw.com/gainesville-home-insurance-claims/"
+            "href": "https://eberstlaw.com/gainesville-home-insurance-claims/",
+            "image": "/topical/icon-svc-damages.svg"
           }
         ]
       },
@@ -621,17 +632,20 @@
           {
             "title": "Motorcycle Accidents on A1A and Florida Highways",
             "description": "Florida motorcycle riders face insurer bias and disputed fault. Eberst Law pushes back on assumptions about rider conduct and pursues full damages.",
-            "href": "https://eberstlaw.com/motorcycle-accident/"
+            "href": "https://eberstlaw.com/motorcycle-accident/",
+            "image": "/topical/icon-pa-moto.svg"
           },
           {
             "title": "Bicycle Crashes in Florida",
             "description": "Cyclists struck by drivers in Stuart, Daytona Beach, and Gainesville have rights under Florida traffic law. Eberst Law investigates from scene to courtroom.",
-            "href": "https://eberstlaw.com/bike-accidents/"
+            "href": "https://eberstlaw.com/bike-accidents/",
+            "image": "/topical/icon-pa-bike.svg"
           },
           {
             "title": "Pedestrian Strikes",
             "description": "Pedestrian collisions often involve disputed fault and driver distraction. Eberst Law builds the case using witnesses, video, and accident reconstruction.",
-            "href": "https://eberstlaw.com/pedestrian-accidents/"
+            "href": "https://eberstlaw.com/pedestrian-accidents/",
+            "image": "/topical/icon-pa-pedestrian.svg"
           }
         ]
       }
