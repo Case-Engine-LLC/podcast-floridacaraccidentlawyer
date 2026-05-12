@@ -402,7 +402,8 @@
       },
       {
         "name": "Contact",
-        "href": "#contact"
+        "href": "https://eberstlaw.com/contact-us/",
+        "external": true
       }
     ],
     "ctaText": "Subscribe",
@@ -466,7 +467,7 @@
     },
     "formCTA": {
       "text": "Free Consultation",
-      "href": "https://eberstlaw.com/contact/"
+      "href": "https://eberstlaw.com/contact-us/"
     },
     "firmUrl": "https://eberstlaw.com"
   },
