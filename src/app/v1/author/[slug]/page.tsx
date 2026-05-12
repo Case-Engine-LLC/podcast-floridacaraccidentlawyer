@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!author) return { title: 'Author Not Found' }
 
   return {
-    title: `${author.name} — ${author.title} | ${siteConfig.podcastName}`,
+    title: `${author.name} - ${author.title} | ${siteConfig.podcastName}`,
     description: author.bio[0],
   }
 }

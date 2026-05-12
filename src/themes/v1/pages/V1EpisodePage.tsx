@@ -16,7 +16,7 @@ const episodeSchema = {
       "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/episode/1#webpage",
       "url": "https://podcast-floridacaraccidentlawyer.vercel.app/episode/1",
       "name": "What Every Florida Driver Needs to Know in the First 72 Hours After a Crash | Episode 1 | The Eberst Law Podcast",
-      "description": "Jonathon T. Eberst and co-host Alexis walk through exactly what an injured Floridian should do in the first 72 hours after a crash — from medical care to the call you should not make.",
+      "description": "Jonathon T. Eberst and co-host Alexis walk through exactly what an injured Floridian should do in the first 72 hours after a crash - from medical care to the call you should not make.",
       "isPartOf": {
         "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#website"
       },
@@ -58,7 +58,7 @@ const episodeSchema = {
       "@type": "PodcastEpisode",
       "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/episode/1#episode",
       "name": "What Every Florida Driver Needs to Know in the First 72 Hours After a Crash",
-      "description": "In the debut episode of The Eberst Law Podcast, host Jonathon T. Eberst and co-host Alexis walk through exactly what an injured Floridian should do in the first 72 hours after a car accident — what to say (and not say) to the adjuster, why late-onset neck and back pain doesn't mean it's too late, how Florida's comparative fault rules actually work, and why insurance carriers open every file hoping you settle before you learn any of this. TODO: finalize title, description, and episode art from final recording and show notes.",
+      "description": "In the debut episode of The Eberst Law Podcast, host Jonathon T. Eberst and co-host Alexis walk through exactly what an injured Floridian should do in the first 72 hours after a car accident - what to say (and not say) to the adjuster, why late-onset neck and back pain doesn't mean it's too late, how Florida's comparative fault rules actually work, and why insurance carriers open every file hoping you settle before you learn any of this. TODO: finalize title, description, and episode art from final recording and show notes.",
       "episodeNumber": 1,
       "url": "https://podcast-floridacaraccidentlawyer.vercel.app/episode/1",
       "image": "https://podcast-floridacaraccidentlawyer.vercel.app/cover.jpg",
@@ -103,7 +103,7 @@ const episodeSchema = {
           "name": "How does Florida's PIP system affect injured drivers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Jonathon explains Florida's no-fault PIP system, the 14-day rule for seeking initial treatment, the permanent-injury threshold for non-economic damages, and the common mistakes that forfeit PIP benefits — including treating too late, failing to document symptoms at the first visit, or giving inconsistent statements between providers."
+            "text": "Jonathon explains Florida's no-fault PIP system, the 14-day rule for seeking initial treatment, the permanent-injury threshold for non-economic damages, and the common mistakes that forfeit PIP benefits - including treating too late, failing to document symptoms at the first visit, or giving inconsistent statements between providers."
           }
         },
         {
@@ -111,7 +111,7 @@ const episodeSchema = {
           "name": "Why can't I handle the insurance claim myself?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Alexis asks the question most injured Floridians ask themselves, and Jonathon answers: insurance adjusters have training, scripts, and reserves — and they track which claimants are unrepresented. Self-represented claims resolve for a fraction of represented claims on identical facts, not because the adjuster is dishonest but because leverage shifts the moment an attorney files suit."
+            "text": "Alexis asks the question most injured Floridians ask themselves, and Jonathon answers: insurance adjusters have training, scripts, and reserves - and they track which claimants are unrepresented. Self-represented claims resolve for a fraction of represented claims on identical facts, not because the adjuster is dishonest but because leverage shifts the moment an attorney files suit."
           }
         },
         {

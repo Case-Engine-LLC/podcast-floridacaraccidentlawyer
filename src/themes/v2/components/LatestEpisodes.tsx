@@ -93,7 +93,7 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
           </div>
         </div>
 
-        {/* List View — Table Style */}
+        {/* List View - Table Style */}
         {viewMode === 'list' && (
           <div>
             {/* Table Header */}
@@ -164,7 +164,7 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
           </div>
         )}
 
-        {/* Grid View — Full-width horizontal cards */}
+        {/* Grid View - Full-width horizontal cards */}
         {viewMode === 'grid' && (
           <div className="space-y-6">
             {filteredEpisodes.map((ep) => (

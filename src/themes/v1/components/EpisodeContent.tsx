@@ -37,7 +37,7 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
     <section id="episode-content" className="py-16 md:py-20 bg-white">
       <div className="w-[90%] mx-auto bg-primary rounded-[30px] py-12 md:py-16">
         <div className="max-w-container mx-auto px-6 md:px-12">
-          {/* YouTube Video — shown above audio when youtubeUrl is set */}
+          {/* YouTube Video - shown above audio when youtubeUrl is set */}
           {youtubeEmbed && (
             <div className="mb-12 relative w-full aspect-video rounded-3xl overflow-hidden bg-black">
               <iframe
@@ -106,7 +106,7 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
                   <p className="text-lg md:text-xl text-white leading-relaxed">
                     {content.featuredQuote}
                   </p>
-                  <p className="text-white/50 mt-4">— {attorney.name}</p>
+                  <p className="text-white/50 mt-4">- {attorney.name}</p>
                 </div>
 
                 {content.additionalParagraphs.length > 0 && (
@@ -177,7 +177,7 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
                   <p className="text-lg md:text-xl text-white leading-relaxed">
                     {content.featuredQuote}
                   </p>
-                  <p className="text-white/50 mt-4">— {attorney.name}, {attorney.firm}</p>
+                  <p className="text-white/50 mt-4">- {attorney.name}, {attorney.firm}</p>
                 </div>
               </div>
             )}

@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 import { siteConfig, attorney } from '@/data/siteData'
 
 export const runtime = 'edge'
-export const alt = `${siteConfig.podcastName} — hosted by ${attorney.name}, ${attorney.firm}`
+export const alt = `${siteConfig.podcastName} - hosted by ${attorney.name}, ${attorney.firm}`
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -88,7 +88,7 @@ export default function OgImage() {
             marginBottom: 40,
           }}
         >
-          {attorney.title} — host of {siteConfig.podcastName}.
+          {attorney.title} - host of {siteConfig.podcastName}.
         </div>
 
         <div

@@ -99,7 +99,7 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
               </div>
             </div>
 
-            {/* Right Image — Episode Thumbnail */}
+            {/* Right Image - Episode Thumbnail */}
             <div className="relative w-full h-[280px] md:h-[380px] flex items-center justify-center">
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <img

@@ -18,7 +18,7 @@ function toSentenceBoundary(text: string, maxChars = 360): string {
   const slice = text.slice(0, maxChars)
   const lastBreak = Math.max(slice.lastIndexOf('. '), slice.lastIndexOf('! '), slice.lastIndexOf('? '))
   if (lastBreak > maxChars * 0.5) return slice.slice(0, lastBreak + 1)
-  return slice.replace(/[\s,;:—-]+\S*$/, '') + '…'
+  return slice.replace(/[\s,;:-]+\S*$/, '') + '…'
 }
 
 const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
@@ -27,7 +27,7 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
   const [viewMode, setViewMode] = useState<'list' | 'grid'>('list')
   const [showAll, setShowAll] = useState(false)
 
-  // Order newest first, then renumber for display so listing reads 1,2,3 — never skips.
+  // Order newest first, then renumber for display so listing reads 1,2,3 - never skips.
   const orderedEpisodes = useMemo(
     () => [...episodesData].sort((a, b) => Number(b.id) - Number(a.id)),
     [episodesData]
@@ -76,7 +76,7 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
         {/* Controls: Filters + View Toggle */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-8 md:gap-6">
           <div className="flex items-center gap-3">
-            {/* Topic Filter — only render when there are real options to choose from */}
+            {/* Topic Filter - only render when there are real options to choose from */}
             {topicOptions.length > 2 && (
               <div className="flex items-center gap-2 md:gap-3">
                 <span className="hidden md:inline text-white font-medium whitespace-nowrap">Filter By Topic:</span>

@@ -63,7 +63,7 @@ const FeaturedEpisodePlayer = ({
 
         {/* Audio Player */}
         <div className="flex items-center gap-3">
-          {/* Play Button — opens episode page where the AudioPlayer works */}
+          {/* Play Button - opens episode page where the AudioPlayer works */}
           <Link
             href={episodeLink}
             aria-label={`Play ${title}`}
@@ -121,7 +121,7 @@ const FeaturedEpisodePlayer = ({
             </div>
           </div>
 
-          {/* Audio Player — clicking play opens the episode page where the real AudioPlayer lives */}
+          {/* Audio Player - clicking play opens the episode page where the real AudioPlayer lives */}
           <div className="flex items-center gap-4">
             <Link
               href={episodeLink}

@@ -145,7 +145,7 @@ const V3AuthorPage = ({ slug }: V3AuthorPageProps) => {
                   <div className="space-y-3">
                     {author.education.map((edu, i) => (
                       <div key={i} className="bg-zinc-900 rounded-xl p-5 border border-white/5">
-                        <p className="font-bold text-white">{edu.degree}{edu.honors ? ` — ${edu.honors}` : ''}</p>
+                        <p className="font-bold text-white">{edu.degree}{edu.honors ? ` - ${edu.honors}` : ''}</p>
                         <p className="text-slate-500 text-sm mt-1">{edu.school}</p>
                         <p className="text-slate-600 text-sm">Class of {edu.year}</p>
                       </div>

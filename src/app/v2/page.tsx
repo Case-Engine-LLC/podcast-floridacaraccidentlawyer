@@ -81,7 +81,7 @@ const homeSchema = {
       "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#webpage",
       "url": "https://podcast-floridacaraccidentlawyer.vercel.app/",
       "name": "The Eberst Law Podcast | The Eberst Law Firm",
-      "description": "Jonathon Eberst covers Florida personal injury — PIP, UM/UIM, evidence preservation, and how insurance carriers really evaluate claims.",
+      "description": "Jonathon Eberst covers Florida personal injury - PIP, UM/UIM, evidence preservation, and how insurance carriers really evaluate claims.",
       "isPartOf": {
         "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#website"
       },
@@ -114,7 +114,7 @@ const homeSchema = {
       "@type": "PodcastSeries",
       "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#podcast",
       "name": "The Eberst Law Podcast",
-      "description": "The Eberst Law Podcast covers Florida personal injury law from the plaintiff side — how to handle the first 72 hours after a crash, PIP and UM/UIM coverage, nursing-home neglect, and what insurance companies do not want injured Floridians to know.",
+      "description": "The Eberst Law Podcast covers Florida personal injury law from the plaintiff side - how to handle the first 72 hours after a crash, PIP and UM/UIM coverage, nursing-home neglect, and what insurance companies do not want injured Floridians to know.",
       "url": "https://podcast-floridacaraccidentlawyer.vercel.app/",
       "image": "https://podcast-floridacaraccidentlawyer.vercel.app/Hero.jpg",
       "author": {
@@ -156,7 +156,7 @@ const homeSchema = {
           "name": "What topics does Jonathon Eberst cover on The Eberst Law Podcast?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Jonathon Eberst covers the full range of cases The Eberst Law Firm handles — car, truck, motorcycle, bicycle, and pedestrian accidents; brain and spinal injuries; wrongful death; nursing-home neglect; and denied hurricane claims. Episodes focus on what injured Floridians actually need to know: PIP thresholds, UM/UIM stacking, evidence preservation, and when a case has to go to trial."
+            "text": "Jonathon Eberst covers the full range of cases The Eberst Law Firm handles - car, truck, motorcycle, bicycle, and pedestrian accidents; brain and spinal injuries; wrongful death; nursing-home neglect; and denied hurricane claims. Episodes focus on what injured Floridians actually need to know: PIP thresholds, UM/UIM stacking, evidence preservation, and when a case has to go to trial."
           }
         },
         {
@@ -172,7 +172,7 @@ const homeSchema = {
           "name": "Who is the target audience?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The show is built for injured Floridians on the east coast — from the Treasure Coast (Stuart, Jensen Beach, Port St. Lucie) through Daytona Beach and up to Gainesville — as well as families and caregivers making decisions after a serious accident or nursing-home concern."
+            "text": "The show is built for injured Floridians on the east coast - from the Treasure Coast (Stuart, Jensen Beach, Port St. Lucie) through Daytona Beach and up to Gainesville - as well as families and caregivers making decisions after a serious accident or nursing-home concern."
           }
         },
         {
@@ -180,7 +180,7 @@ const homeSchema = {
           "name": "How do I contact The Eberst Law Firm?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Jonathon and Alexis welcome listener questions and case scenarios through eberstlaw.com or at (772) 225-4900. Consultations are free, cases are handled on contingency — no attorney’s fees unless a recovery is obtained — and the firm serves clients from Stuart, Gainesville, and Daytona Beach."
+            "text": "Jonathon and Alexis welcome listener questions and case scenarios through eberstlaw.com or at (772) 225-4900. Consultations are free, cases are handled on contingency - no attorney’s fees unless a recovery is obtained - and the firm serves clients from Stuart, Gainesville, and Daytona Beach."
           }
         }
       ]

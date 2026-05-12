@@ -66,8 +66,8 @@ export function generateAuthorSchema(author: typeof authorProfiles[string], slug
         '@type': ['WebPage', 'ProfilePage'],
         '@id': `${pageUrl}#webpage`,
         'url': pageUrl,
-        'name': `${author.name} — ${author.title}`,
-        'headline': `${author.name} — Personal Injury Attorney`,
+        'name': `${author.name} - ${author.title}`,
+        'headline': `${author.name} - Personal Injury Attorney`,
         'inLanguage': 'en',
         'isPartOf': { '@id': `${SITE_URL}/#website` },
         'about': { '@id': `${pageUrl}#person` },
@@ -114,7 +114,7 @@ export function generateAuthorSchema(author: typeof authorProfiles[string], slug
         'hasCredential': author.admissions.map(admission => ({
           '@type': 'EducationalOccupationalCredential',
           'credentialCategory': 'Professional license',
-          'name': `${admission.jurisdiction} — Bar Admission`,
+          'name': `${admission.jurisdiction} - Bar Admission`,
           'identifier': author.barNumber,
           'url': author.barUrl,
         })),
@@ -129,7 +129,7 @@ export function generateAuthorSchema(author: typeof authorProfiles[string], slug
         'knowsAbout': author.practiceAreas,
         'memberOf': author.memberships.map(org => ({
           '@type': 'Organization',
-          'name': org.replace(/ — .*/, ''),
+          'name': org.replace(/ - .*/, ''),
         })),
         'award': author.awards.map(a => `${a.name} (${a.years})`),
         'review': testimonials.slice(0, 2).map(t => ({
@@ -281,7 +281,7 @@ const V1AuthorPage = ({ slug }: V1AuthorPageProps) => {
                   <div className="space-y-4">
                     {author.education.map((edu, index) => (
                       <div key={index} className="bg-[#f1f2f4] rounded-xl p-5">
-                        <p className="font-bold text-black">{edu.degree}{edu.honors ? ` — ${edu.honors}` : ''}</p>
+                        <p className="font-bold text-black">{edu.degree}{edu.honors ? ` - ${edu.honors}` : ''}</p>
                         <p className="text-gray-600 text-sm">{edu.school}</p>
                         <p className="text-gray-500 text-sm">Class of {edu.year}</p>
                       </div>

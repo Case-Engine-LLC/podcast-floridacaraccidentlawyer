@@ -133,7 +133,7 @@ const V2AuthorPage = ({ slug }: V2AuthorPageProps) => {
                   <div className="space-y-3">
                     {author.education.map((edu, i) => (
                       <div key={i} className="bg-white rounded-xl p-5 shadow-sm">
-                        <p className="font-bold text-[#10284B]">{edu.degree}{edu.honors ? ` — ${edu.honors}` : ''}</p>
+                        <p className="font-bold text-[#10284B]">{edu.degree}{edu.honors ? ` - ${edu.honors}` : ''}</p>
                         <p className="text-gray-500 text-sm mt-1">{edu.school}</p>
                         <p className="text-gray-400 text-sm">Class of {edu.year}</p>
                       </div>

@@ -1,5 +1,5 @@
 /**
- * Site Data — sourced from siteData.json, edited via Case Engine webapp.
+ * Site Data - sourced from siteData.json, edited via Case Engine webapp.
  * DO NOT hand-edit this file; edit siteData.json or the webapp instead.
  */
 
@@ -51,7 +51,7 @@ export const podcastTeam = data.podcastTeam
 export const reviewsInstruction = data.reviewsInstruction
 
 /**
- * Rotation / podcast team — secondary cast who appear in select episodes.
+ * Rotation / podcast team - secondary cast who appear in select episodes.
  * Alexis is the co-host/producer (not an attorney) and is not yet a Supabase
  * record; this array preserves her credentials for the webapp editor and
  * any future sync job.

@@ -75,7 +75,7 @@ const SchemaJsonLd = () => {
       : undefined,
   }))
 
-  // Primary host for schema purposes — use the first authorProfile (Jonathon).
+  // Primary host for schema purposes - use the first authorProfile (Jonathon).
   // The co-host (Alexis) is intentionally excluded from the host/Attorney schema
   // because she is non-attorney and her education/admissions/awards arrays are empty.
   const hostProfile = authorProfiles && Object.values(authorProfiles)[0]
