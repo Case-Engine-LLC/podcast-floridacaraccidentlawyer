@@ -107,11 +107,11 @@ const PodcastTeam = () => {
                 <button
                   onClick={(e) => {
                     e.stopPropagation()
-                    // TODO: Navigate to episodes page
+                    handleAuthorClick(teamMembers[currentSlide].slug)
                   }}
                   className="bg-secondary hover:bg-secondary-hover text-white text-xs font-semibold px-3 py-1.5 rounded-full whitespace-nowrap"
                 >
-                  All Episodes
+                  Meet Jonathon
                 </button>
               </div>
               <p className="text-gray-700 text-xs leading-relaxed">{teamMembers[currentSlide].bio}</p>
@@ -162,7 +162,7 @@ const PodcastTeam = () => {
         </div>
 
         {/* Desktop Grid */}
-        <div className="hidden md:grid grid-cols-2 gap-6">
+        <div className={`hidden md:grid gap-6 ${teamMembers.length === 1 ? 'grid-cols-1 max-w-3xl mx-auto' : 'grid-cols-2'}`}>
           {teamMembers.map((member, index) => (
             <div key={index} className="w-full flex justify-center items-end relative">
               <img
@@ -191,11 +191,11 @@ const PodcastTeam = () => {
                   <button
                     onClick={(e) => {
                       e.stopPropagation()
-                      // TODO: Navigate to episodes page
+                      handleAuthorClick(member.slug)
                     }}
                     className="bg-secondary hover:bg-secondary-hover text-white text-sm font-semibold px-4 py-2 rounded-full whitespace-nowrap"
                   >
-                    All Episodes
+                    Meet Jonathon
                   </button>
                 </div>
                 <p className="text-gray-700 text-sm">{member.bio}</p>

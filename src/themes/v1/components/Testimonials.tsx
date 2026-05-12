@@ -28,6 +28,10 @@ const Testimonials = () => {
 
   const testimonials: Testimonial[] = testimonialsData
 
+  if (testimonials.length === 0) {
+    return null
+  }
+
   const cardsPerView = isMobile ? 1 : 3
   const maxIndex = Math.max(0, testimonials.length - cardsPerView)
 
