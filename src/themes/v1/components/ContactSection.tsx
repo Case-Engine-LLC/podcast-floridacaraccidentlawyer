@@ -8,7 +8,7 @@ const ContactSection = () => {
   const contactUrl = siteConfig.formCTA?.href || 'https://eberstlaw.com/contact-us/'
 
   return (
-    <section id="contact" className="py-24 bg-[#f1f2f4]">
+    <section id="contact" className="scroll-mt-24 py-24 bg-[#f1f2f4]">
       <div className="max-w-container mx-auto px-6 md:px-12">
         <div className="bg-white rounded-[12px] shadow-sm overflow-hidden flex flex-col md:flex-row">
           {/* Contact Info */}
@@ -40,7 +40,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact CTA */}
-          <div className="md:w-2/3 p-12 flex flex-col justify-center">
+          <div className="md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
             <p className="text-[12px] font-bold uppercase tracking-[0.2em] text-secondary mb-4">
               No form required
             </p>
@@ -55,14 +55,14 @@ const ContactSection = () => {
                 href={contactUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-black text-white px-8 py-4 rounded-[3px] font-bold text-[14px] uppercase tracking-[0.7px] hover:bg-black/80 transition-all"
+                className="inline-flex items-center justify-center gap-2 bg-black text-white px-6 sm:px-8 py-4 rounded-[3px] font-bold text-[13px] sm:text-[14px] uppercase tracking-[0.7px] hover:bg-black/80 transition-all"
               >
                 Contact Eberst Law
                 <ExternalLink size={16} />
               </a>
               <a
                 href={`tel:${contact.phone}`}
-                className="inline-flex items-center justify-center gap-2 border border-black/15 text-black px-8 py-4 rounded-[3px] font-bold text-[14px] uppercase tracking-[0.7px] hover:bg-black/5 transition-all"
+                className="inline-flex items-center justify-center gap-2 border border-black/15 text-black px-6 sm:px-8 py-4 rounded-[3px] font-bold text-[13px] sm:text-[14px] uppercase tracking-[0.7px] hover:bg-black/5 transition-all"
               >
                 <Phone size={16} />
                 Call {contact.phone}
