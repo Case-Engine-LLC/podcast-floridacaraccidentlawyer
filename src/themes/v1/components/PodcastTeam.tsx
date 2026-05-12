@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { podcastTeam } from '@/data/siteData'
 
+const MEET_JONATHON_PATH = '/meet-jonathon-t-eberst'
+
 const PodcastTeam = () => {
   const router = useRouter()
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -28,7 +30,7 @@ const PodcastTeam = () => {
   }
 
   const handleAuthorClick = (slug: string) => {
-    router.push(`/author/${slug}`)
+    router.push(slug === 'jonathon-eberst' ? MEET_JONATHON_PATH : `/author/${slug}`)
   }
 
   return (
