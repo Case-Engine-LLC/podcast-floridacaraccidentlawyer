@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { Star, ThumbsUp, Briefcase } from 'lucide-react'
+import { Star, ThumbsUp, Trophy } from 'lucide-react'
 import { stats } from '@/data/siteData'
 
 const StatsBanner = () => {
@@ -30,7 +30,7 @@ const StatsBanner = () => {
       value: stats.casesHandled ? `${stats.casesHandled}+` : '',
       label: stats.casesLabel,
       text: stats.casesVerbalization,
-      Icon: Briefcase,
+      Icon: Trophy,
       cardClass: 'bg-secondary',
       valueClass: 'text-white',
       textClass: 'text-white',
@@ -42,10 +42,17 @@ const StatsBanner = () => {
     return null
   }
 
+  const gridColsClass =
+    statItems.length === 1
+      ? 'grid-cols-1 max-w-md mx-auto'
+      : statItems.length === 2
+        ? 'grid-cols-1 sm:grid-cols-2 max-w-3xl mx-auto'
+        : 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3'
+
   return (
     <section className="bg-white py-0 md:py-12">
       <div className="max-w-container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className={`grid ${gridColsClass} gap-6`}>
           {statItems.map(({ value, label, text, Icon, cardClass, valueClass, textClass, bodyClass }) => (
             <div key={label} className={`${cardClass} rounded-3xl px-6 py-8 md:px-5 md:py-10 text-left`}>
               <div className="flex items-center justify-between mb-4 md:mb-6">

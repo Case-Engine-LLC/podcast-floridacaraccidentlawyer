@@ -9,9 +9,17 @@ interface EpisodeHeroProps {
   episode?: Episode | null
 }
 
+const isRealLink = (url?: string | null): url is string =>
+  !!url && url !== '#' && url.trim() !== ''
+
 const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
   const ep = propEpisode ?? staticEpisode
   const episodesData = propEpisode ? [propEpisode] : staticEpisodesData
+  const appleHref = siteConfig.platformLinks.apple
+  const spotifyHref = siteConfig.platformLinks.spotify
+  const showApple = isRealLink(appleHref)
+  const showSpotify = isRealLink(spotifyHref)
+  const showPlatformRow = showApple || showSpotify
   return (
     <>
       {/* Marquee Banner */}
@@ -48,9 +56,11 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
               </p>
 
               {/* Platform Buttons */}
+              {showPlatformRow && (
               <div className="flex flex-col sm:flex-row gap-4">
+                {showApple && (
                 <a
-                  href={siteConfig.platformLinks.apple}
+                  href={appleHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 px-6 py-4 bg-black text-white rounded-2xl transition-all hover:scale-105 w-full sm:w-auto sm:min-w-[15rem]"
@@ -72,9 +82,11 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
                     <div className="text-base font-bold text-white">Apple Podcast</div>
                   </div>
                 </a>
+                )}
 
+                {showSpotify && (
                 <a
-                  href={siteConfig.platformLinks.spotify}
+                  href={spotifyHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 px-6 py-4 bg-black text-white rounded-2xl transition-all hover:scale-105 w-full sm:w-auto sm:min-w-[15rem]"
@@ -96,7 +108,9 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
                     <div className="text-base font-bold text-white">Spotify</div>
                   </div>
                 </a>
+                )}
               </div>
+              )}
             </div>
 
             {/* Right Image - Episode Thumbnail */}

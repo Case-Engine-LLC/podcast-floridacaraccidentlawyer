@@ -45,7 +45,7 @@ const FAQ = () => {
               <button
                 key={index}
                 onClick={() => handleTabChange(index)}
-                className={`pb-3 px-4 whitespace-nowrap text-sm md:text-base font-semibold transition-all ${
+                className={`pb-3 px-4 whitespace-nowrap text-base md:text-lg font-semibold transition-all ${
                   activeTab === index
                     ? 'text-secondary border-b-2 border-secondary'
                     : 'text-gray-600 hover:text-gray-900'

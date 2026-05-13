@@ -1,8 +1,22 @@
 'use client'
 
 import React from 'react'
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react'
 import { footer, episodes as staticEpisodes } from '@/data/siteData'
+
+const XIcon = ({ size = 20, className = '' }: { size?: number; className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    aria-hidden="true"
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817-5.967 6.817H1.677l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644Z" />
+  </svg>
+)
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -12,7 +26,7 @@ const Footer = () => {
     href: `/episode/${episode.id}`,
   }))
   const socialItems = [
-    { href: footer.socialLinks.twitter, label: 'Twitter', Icon: Twitter },
+    { href: footer.socialLinks.twitter, label: 'X', Icon: XIcon },
     { href: footer.socialLinks.linkedin, label: 'LinkedIn', Icon: Linkedin },
     { href: footer.socialLinks.facebook, label: 'Facebook', Icon: Facebook },
     { href: footer.socialLinks.instagram, label: 'Instagram', Icon: Instagram },
@@ -39,7 +53,7 @@ const Footer = () => {
           {/* Left Column - Logo & Social */}
           <div>
             <div className="mb-6">
-              <img src="/logo.svg" alt={footer.logo} className="h-14 md:h-16 w-auto object-contain" />
+              <img src="/logo.svg" alt={footer.logo} className="h-20 md:h-24 w-auto object-contain" />
             </div>
             <p className="text-base text-white/70 leading-relaxed mb-8 max-w-md">
               {footer.description}
@@ -65,7 +79,7 @@ const Footer = () => {
           {/* Right Column - Episodes */}
           <div>
             <h3 className="text-xl font-bold text-white mb-6">Episodes</h3>
-            <div className="grid grid-cols-3 gap-x-8 gap-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-4">
               {episodes.map((episode, index) => (
                 <a
                   key={index}

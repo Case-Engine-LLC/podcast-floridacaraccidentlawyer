@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Play } from 'lucide-react'
 import { content, attorney } from '@/data/siteData'
 import { episodeTranscript as staticTranscript } from '@/data/transcript'
 import type { Episode } from '@/lib/data'
@@ -51,7 +50,7 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
             </div>
           )}
 
-          {/* Audio Player */}
+          {/* Audio Player — render only when we have real audio; no dead placeholder. */}
           {episode?.audioUrl ? (
             <div className="mb-12">
               <AudioPlayer
@@ -61,10 +60,13 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
               />
             </div>
           ) : !youtubeEmbed ? (
-            <div className="relative w-full aspect-video bg-[#3a3a3a] rounded-3xl overflow-hidden mb-12 flex items-center justify-center group cursor-pointer">
-              <div className="relative z-10 w-20 h-20 rounded-full bg-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Play size={32} className="text-white fill-white ml-1" />
-              </div>
+            <div className="mb-12 rounded-3xl bg-white/5 border border-white/10 px-8 py-10 md:py-12 text-center">
+              <p className="text-white/70 text-base md:text-lg">
+                Audio for this episode is coming soon.
+              </p>
+              <p className="text-white/40 text-sm mt-2">
+                Read the overview, transcript, or key takeaways below.
+              </p>
             </div>
           ) : null}
 

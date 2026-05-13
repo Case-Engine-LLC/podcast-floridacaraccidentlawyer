@@ -43,11 +43,11 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
             className="flex items-center"
             aria-label={`${siteConfig.podcastName} - visit law firm site`}
           >
-            <img src="/logo.svg" alt={siteConfig.podcastName} className="h-12 md:h-14 w-auto object-contain" />
+            <img src="/logo.svg" alt={siteConfig.podcastName} className="h-16 md:h-20 w-auto object-contain" />
           </a>
         ) : (
           <Link href="/" className="flex items-center">
-            <img src="/logo.svg" alt={siteConfig.podcastName} className="h-12 md:h-14 w-auto object-contain" />
+            <img src="/logo.svg" alt={siteConfig.podcastName} className="h-16 md:h-20 w-auto object-contain" />
           </Link>
         )}
 

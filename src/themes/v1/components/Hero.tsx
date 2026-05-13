@@ -6,7 +6,15 @@ import { FileText } from 'lucide-react'
 import FeaturedEpisodePlayer from './FeaturedEpisodePlayer'
 import { siteConfig, episode, content } from '@/data/siteData'
 
+const isRealLink = (url?: string | null): url is string =>
+  !!url && url !== '#' && url.trim() !== ''
+
 const Hero = () => {
+  const appleHref = siteConfig.platformLinks.apple
+  const spotifyHref = siteConfig.platformLinks.spotify
+  const showApple = isRealLink(appleHref)
+  const showSpotify = isRealLink(spotifyHref)
+  const showSubscribeRow = showApple || showSpotify
   return (
     <>
     <section className="hero-section relative pt-[4rem] md:pt-[6rem] pb-12 md:pb-0 md:h-[90vh]">
@@ -54,10 +62,11 @@ const Hero = () => {
             {content.heroDescription}
           </p>
 
-          {/* Available On Buttons */}
+          {/* Available On Buttons - anchor target preserved so /#listen scrolls here even when no links yet */}
           <div id="listen" className="flex flex-row gap-2 md:gap-4 items-center justify-center md:justify-start scroll-mt-24">
+            {showApple && (
             <a
-              href={siteConfig.platformLinks.apple}
+              href={appleHref}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 md:gap-3 px-2 md:px-6 py-2 md:py-4 rounded-xl md:rounded-2xl transition-all hover:scale-105 flex-1 sm:flex-initial sm:min-w-[15rem]"
@@ -83,9 +92,11 @@ const Hero = () => {
                 <div className="text-sm md:text-lg font-bold text-white">Apple Podcast</div>
               </div>
             </a>
+            )}
 
+            {showSpotify && (
             <a
-              href={siteConfig.platformLinks.spotify}
+              href={spotifyHref}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 md:gap-3 px-2 md:px-6 py-2 md:py-4 rounded-xl md:rounded-2xl transition-all hover:scale-105 flex-1 sm:flex-initial sm:min-w-[15rem]"
@@ -111,6 +122,11 @@ const Hero = () => {
                 <div className="text-sm md:text-lg font-bold text-white">Spotify</div>
               </div>
             </a>
+            )}
+
+            {!showSubscribeRow && (
+              <p className="text-sm md:text-base text-white/60 italic">Subscribe links coming soon.</p>
+            )}
           </div>
         </div>
 
