@@ -317,11 +317,10 @@
     "description": "The Eberst Law Podcast is a weekly show for injured Floridians on the east coast dealing with car accidents, trucking wrecks, nursing home abuse, medical malpractice, and hurricane damage claims. Hosted by The Eberst Law Firm founding attorney Jonathon T. Eberst, every episode anchors to Florida law and the real insurance landscape victims are up against.",
     "copyright": "The Eberst Law Firm",
     "socialLinks": {
+      "facebook": "https://www.facebook.com/eberstlaw",
+      "linkedin": "https://www.linkedin.com/company/eberst-law",
       "twitter": "https://x.com/eberstlaw",
-      "linkedin": "https://www.linkedin.com/company/eberst-law/",
-      "facebook": "https://www.facebook.com/eberstlaw/",
-      "instagram": "",
-      "youtube": "https://www.youtube.com/@theeberstlawfirm8870/featured"
+      "youtube": "https://www.youtube.com/@theeberstlawfirm8870"
     }
   },
   "formConfig": {
@@ -460,8 +459,7 @@
     ],
     "taglineNote": "Tagline pulled verbatim from the Eberst Podcast Overview brief. No alternatives requested by the client.",
     "podcastUrl": "https://podcast-floridacaraccidentlawyer.vercel.app",
-    "rssFeedUrl": "",
-    "rssFeedUrlNote": "TODO: Eberst podcast RSS feed is not yet available as of 2026-04-23. User confirmed the feed will not be ready today. Leave blank and populate when the hosting provider (Flightcast / Transistor / Buzzsprout / etc.) publishes the feed URL.",
+    "rssFeedUrl": "https://rss2.flightcast.com/ldkfkjxppnzt3odgxg7zcmhx.xml",
     "format": "Interview-based, video-first (recorded on Riverside.fm)",
     "episodeLengthMinutes": "40-50",
     "cadence": "Weekly, evergreen",
