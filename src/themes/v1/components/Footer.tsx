@@ -23,7 +23,7 @@ const Footer = () => {
 
   const episodes = staticEpisodes.map((episode) => ({
     name: `Episode ${episode.number}: ${episode.title}`,
-    href: `/episode/${episode.id}`,
+    href: `/episode/${episode.slug}`,
   }))
   const socialItems = [
     { href: footer.socialLinks.twitter, label: 'X', Icon: XIcon },
