@@ -468,8 +468,8 @@
     "episodeLengthMinutes": "40-50",
     "cadence": "Weekly, evergreen",
     "platformLinks": {
-      "apple": "#",
-      "spotify": "#"
+      "apple": "https://podcasts.apple.com/us/channel/the-eberst-advantage/id6769171866",
+      "spotify": "https://open.spotify.com/user/31xw3ghs6ds54gcptqfuweohs5hq"
     },
     "formCTA": {
       "text": "Free Consultation",
