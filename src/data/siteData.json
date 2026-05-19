@@ -499,7 +499,56 @@
       "Answers to listener questions about real east-coast Florida scenarios"
     ]
   },
-  "testimonials": [],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "William",
+      "initials": "W",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "I am writing upon completion of my case where I have suffered injuries that, after less than two years, the EBERST & EBERST LAW FIRM has resolved my lawsuit in the most professional and satisfactory manner. Led by the extraordinary professionalism of Jon and Larry Eberst, from day one forward, were so efficient and effective in helping to resolve my case. My deepest gratitude and thanks to Jon and Larry and the entire staff. Thank you, from the bottom of my heart."
+    },
+    {
+      "id": 2,
+      "name": "Mike I.",
+      "initials": "MI",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "What a great law firm! They were my first call when I got into an accident and they handled everything perfectly!"
+    },
+    {
+      "id": 3,
+      "name": "Bradlee T.",
+      "initials": "BT",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "Cloe and Rachel are the best marketers on the team. Jon is so amazing and I am thankful for him handling my case."
+    },
+    {
+      "id": 4,
+      "name": "Nady A.",
+      "initials": "NA",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "They were great to work with. Friendly & knowledgeable staff got results others couldn't."
+    },
+    {
+      "id": 5,
+      "name": "Jared D.",
+      "initials": "JD",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "Amazing staff! They really helped me out!"
+    },
+    {
+      "id": 6,
+      "name": "Ara W.",
+      "initials": "AW",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "You guys are amazing. So helpful and when I need someone I'll know who to call."
+    }
+  ],
   "topicalEntryGrid": {
     "title": "Explore Topics Covered on the Podcast",
     "description": "Browse the Florida injury and insurance topics Jonathon Eberst covers on the show. Each card links to a deeper resource from The Eberst Law Firm on that situation.",

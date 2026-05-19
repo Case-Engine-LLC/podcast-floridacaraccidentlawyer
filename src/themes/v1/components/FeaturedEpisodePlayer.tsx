@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { Play, Pause, Volume2, VolumeX, ChevronRight } from 'lucide-react'
-import { episode as defaultEpisode } from '@/data/siteData'
+import { episode as defaultEpisode, episodes as staticEpisodesData } from '@/data/siteData'
 
 interface FeaturedEpisodePlayerProps {
   episodeNumber?: string
@@ -80,7 +80,11 @@ const FeaturedEpisodePlayer = ({
   }, [isMuted])
 
   const progress = totalDuration > 0 ? (currentTime / totalDuration) * 100 : 0
-  const coverSrc = imageUrl || '/episode-art.avif'
+  const fallbackArt = (staticEpisodesData.find((e) => {
+    const l = (e as { logo?: string }).logo
+    return !!l && l.trim() !== ''
+  }) as { logo?: string } | undefined)?.logo
+  const coverSrc = imageUrl || fallbackArt
 
   return (
     <div className="bg-white rounded-xl p-5 md:p-6 shadow-sm">
@@ -90,7 +94,9 @@ const FeaturedEpisodePlayer = ({
       <div className="md:hidden">
         <div className="flex gap-4 mb-4 items-center">
           <div className="w-24 h-24 bg-gray-200 rounded-lg shrink-0 overflow-hidden">
-            <img src={coverSrc} alt={title} className="w-full h-full object-cover" />
+            {coverSrc ? (
+              <img src={coverSrc} alt={title} className="w-full h-full object-cover" />
+            ) : null}
           </div>
           <div className="flex-1">
             <h3 className="text-lg font-bold text-black leading-tight mb-1">{title}</h3>
@@ -136,7 +142,9 @@ const FeaturedEpisodePlayer = ({
       {/* Desktop Layout */}
       <div className="hidden md:flex gap-6">
         <div className="w-[12rem] h-[12rem] bg-gray-200 rounded-lg shrink-0 overflow-hidden">
-          <img src={coverSrc} alt={title} className="w-full h-full object-cover" />
+          {coverSrc ? (
+            <img src={coverSrc} alt={title} className="w-full h-full object-cover" />
+          ) : null}
         </div>
         <div className="flex-1 flex flex-col justify-between">
           <div>
