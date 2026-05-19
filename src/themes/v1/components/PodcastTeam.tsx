@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { podcastTeam } from '@/data/siteData'
 
 const MEET_JONATHON_PATH = '/meet-jonathon-t-eberst'
+const MEET_JONATHON_EXTERNAL = 'https://eberstlaw.com/attorneys-and-staff/jonathon-t-eberst/'
 
 const PodcastTeam = () => {
   const router = useRouter()
@@ -30,7 +31,11 @@ const PodcastTeam = () => {
   }
 
   const handleAuthorClick = (slug: string) => {
-    router.push(slug === 'jonathon-eberst' ? MEET_JONATHON_PATH : `/author/${slug}`)
+    if (slug === 'jonathon-eberst') {
+      window.open(MEET_JONATHON_EXTERNAL, '_blank', 'noopener,noreferrer')
+      return
+    }
+    router.push(`/author/${slug}`)
   }
 
   return (

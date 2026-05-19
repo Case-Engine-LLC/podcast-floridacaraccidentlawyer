@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState, useEffect, useRef } from 'react'
-import Link from 'next/link'
 import { ChevronDown, CheckCircle, FileText } from 'lucide-react'
 import { attorney, siteConfig } from '@/data/siteData'
 import { about } from '@/lib/site-compat'
@@ -71,13 +70,15 @@ const About = () => {
 
             {/* CTA/Form */}
             <div className="mt-6 flex justify-center md:justify-start">
-              <Link
+              <a
                 href={siteConfig.formCTA?.href || '#form'}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-secondary text-white px-8 py-4 rounded-2xl transition-transform hover:scale-105 font-bold"
               >
                 <FileText className="w-5 h-5" />
                 <span>{siteConfig.formCTA?.text || 'Free Consultation'}</span>
-              </Link>
+              </a>
             </div>
           </div>
 
