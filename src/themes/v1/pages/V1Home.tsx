@@ -228,7 +228,7 @@ const V1Home = ({ episodes }: V1HomeProps) => {
         <ContactSection />
       </main>
 
-      <Footer />
+      <Footer episodes={episodes} />
     </div>
   )
 }

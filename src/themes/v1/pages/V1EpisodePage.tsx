@@ -5,6 +5,7 @@ import EpisodeHero from '../components/EpisodeHero'
 import EpisodeContent from '../components/EpisodeContent'
 import OtherEpisodes from '../components/OtherEpisodes'
 import FAQ from '../components/FAQ'
+import { siteConfig } from '@/data/siteData'
 import type { Episode } from '@/lib/data'
 import type { TranscriptSegment } from '@/lib/rss'
 
@@ -127,8 +128,56 @@ const episodeSchema = {
   ]
 }
 
-export function generateEpisodeSchema(_episodeId: string) {
-  return episodeSchema
+export function generateEpisodeSchema(episodeId: string, resolvedEpisode?: Episode | null) {
+  const siteUrl = siteConfig.podcastUrl.replace(/\/$/, '')
+  const slugPart = resolvedEpisode?.slug ?? episodeId
+  const episodeUrl = `${siteUrl}/episode/${slugPart}`
+  const graph = episodeSchema['@graph'].map((schemaNode) => {
+    const node = schemaNode as Record<string, any>
+
+    if (node['@type'] === 'WebPage') {
+      return {
+        ...node,
+        '@id': `${episodeUrl}#webpage`,
+        url: episodeUrl,
+        name: resolvedEpisode ? `${resolvedEpisode.title} | ${siteConfig.podcastName}` : node.name,
+        description: resolvedEpisode?.description ?? node.description,
+        breadcrumb: node.breadcrumb
+          ? {
+              ...node.breadcrumb,
+              itemListElement: node.breadcrumb.itemListElement.map((item: Record<string, any>) => (
+                item.position === 3
+                  ? { ...item, name: resolvedEpisode?.title ?? item.name, item: episodeUrl }
+                  : item
+              )),
+            }
+          : node.breadcrumb,
+      }
+    }
+
+    if (node['@type'] === 'PodcastEpisode') {
+      return {
+        ...node,
+        '@id': `${episodeUrl}#episode`,
+        name: resolvedEpisode?.title ?? node.name,
+        description: resolvedEpisode?.description ?? node.description,
+        episodeNumber: resolvedEpisode?.number ?? node.episodeNumber,
+        url: episodeUrl,
+        duration: resolvedEpisode ? `PT${resolvedEpisode.duration.replace(':', 'H').replace(':', 'M')}S` : node.duration,
+        associatedMedia: resolvedEpisode?.audioUrl
+          ? {
+              '@type': 'MediaObject',
+              contentUrl: resolvedEpisode.audioUrl,
+              encodingFormat: resolvedEpisode.audioType || 'audio/mpeg',
+            }
+          : node.associatedMedia,
+      }
+    }
+
+    return node
+  })
+
+  return { ...episodeSchema, '@graph': graph }
 }
 
 interface V1EpisodePageProps {
@@ -138,12 +187,14 @@ interface V1EpisodePageProps {
   transcript?: TranscriptSegment[]
 }
 
-const V1EpisodePage = ({ episodeId: _episodeId, episode: rssEpisode, allEpisodes, transcript }: V1EpisodePageProps) => {
+const V1EpisodePage = ({ episodeId, episode: rssEpisode, allEpisodes, transcript }: V1EpisodePageProps) => {
+  const schema = generateEpisodeSchema(episodeId, rssEpisode)
+
   return (
     <div className="bg-white min-h-screen overflow-x-hidden">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(episodeSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Header variant="light" />
 
@@ -154,7 +205,7 @@ const V1EpisodePage = ({ episodeId: _episodeId, episode: rssEpisode, allEpisodes
         <FAQ />
       </main>
 
-      <Footer />
+      <Footer episodes={allEpisodes} />
     </div>
   )
 }

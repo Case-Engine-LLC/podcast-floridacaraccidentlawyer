@@ -3,6 +3,7 @@
 import React from 'react'
 import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react'
 import { footer, episodes as staticEpisodes, contact } from '@/data/siteData'
+import type { Episode } from '@/lib/data'
 
 const XIcon = ({ size = 20, className = '' }: { size?: number; className?: string }) => (
   <svg
@@ -18,12 +19,17 @@ const XIcon = ({ size = 20, className = '' }: { size?: number; className?: strin
   </svg>
 )
 
-const Footer = () => {
-  const currentYear = new Date().getFullYear()
+interface FooterProps {
+  episodes?: Episode[]
+}
 
-  const episodes = staticEpisodes.map((episode) => ({
+const Footer = ({ episodes: propEpisodes }: FooterProps) => {
+  const currentYear = new Date().getFullYear()
+  const footerEpisodes = propEpisodes ?? staticEpisodes
+
+  const episodes = footerEpisodes.map((episode) => ({
     name: `Episode ${episode.number}: ${episode.title}`,
-    href: `/episode/${episode.slug}`,
+    href: `/episode/${episode.slug ?? episode.id}`,
   }))
   const socialItems = [
     { href: footer.socialLinks.twitter, label: 'X', Icon: XIcon },
