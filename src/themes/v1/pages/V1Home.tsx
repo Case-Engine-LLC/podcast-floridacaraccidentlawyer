@@ -74,7 +74,7 @@ const homeSchema = {
       "@type": "WebSite",
       "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#website",
       "url": "https://podcast-floridacaraccidentlawyer.vercel.app/",
-      "name": "The Eberst Law Podcast",
+      "name": "The Eberst Advantage: Florida Accident & Injury Law Podcast",
       "description": "A podcast by Jonathon T. Eberst of The Eberst Law Firm helping injured Floridians understand car, truck, motorcycle, and catastrophic injury claims.",
       "publisher": {
         "@id": "https://eberstlaw.com/#org"
@@ -93,7 +93,7 @@ const homeSchema = {
       "@type": "WebPage",
       "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#webpage",
       "url": "https://podcast-floridacaraccidentlawyer.vercel.app/",
-      "name": "The Eberst Law Podcast | The Eberst Law Firm",
+      "name": "The Eberst Advantage: Florida Accident & Injury Law Podcast | The Eberst Law Firm",
       "description": "Jonathon Eberst covers Florida personal injury - PIP, UM/UIM, evidence preservation, and how insurance carriers really evaluate claims.",
       "isPartOf": {
         "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#website"
@@ -126,8 +126,8 @@ const homeSchema = {
     {
       "@type": "PodcastSeries",
       "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#podcast",
-      "name": "The Eberst Law Podcast",
-      "description": "The Eberst Law Podcast covers Florida personal injury law from the plaintiff side - how to handle the first 72 hours after a crash, PIP and UM/UIM coverage, nursing-home neglect, and what insurance companies do not want injured Floridians to know.",
+      "name": "The Eberst Advantage: Florida Accident & Injury Law Podcast",
+      "description": "The Eberst Advantage: Florida Accident & Injury Law Podcast covers Florida personal injury law from the plaintiff side - how to handle the first 72 hours after a crash, PIP and UM/UIM coverage, nursing-home neglect, and what insurance companies do not want injured Floridians to know.",
       "url": "https://podcast-floridacaraccidentlawyer.vercel.app/",
       "image": "https://podcast-floridacaraccidentlawyer.vercel.app/Hero.jpg",
       "author": {
@@ -166,7 +166,7 @@ const homeSchema = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What topics does Jonathon Eberst cover on The Eberst Law Podcast?",
+          "name": "What topics does Jonathon Eberst cover on The Eberst Advantage: Florida Accident & Injury Law Podcast?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Jonathon Eberst covers the full range of cases The Eberst Law Firm handles - car, truck, motorcycle, bicycle, and pedestrian accidents; brain and spinal injuries; wrongful death; nursing-home neglect; and denied hurricane claims. Episodes focus on what injured Floridians actually need to know: PIP thresholds, UM/UIM stacking, evidence preservation, and when a case has to go to trial."
@@ -177,7 +177,7 @@ const homeSchema = {
           "name": "How often are new episodes released?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Eberst Law Podcast publishes on a weekly, evergreen cadence. Episodes run 40–70 minutes and cover one topic in depth. Subscribe via the platform links in the footer to be notified when each episode drops."
+            "text": "The Eberst Advantage: Florida Accident & Injury Law Podcast publishes on a weekly, evergreen cadence. Episodes run 40–70 minutes and cover one topic in depth. Subscribe via the platform links in the footer to be notified when each episode drops."
           }
         },
         {

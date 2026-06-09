@@ -66,7 +66,7 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
   const visibleEpisodes = showAll ? filteredEpisodes : filteredEpisodes.slice(0, 3)
 
   return (
-    <section id="episodes" className="bg-primary py-16 md:py-20">
+    <section id="episodes" className="bg-primary pt-8 md:pt-10 pb-16 md:pb-20">
       <div className="max-w-container mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">

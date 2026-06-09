@@ -24,7 +24,7 @@ const Hero = ({ latestEpisode }: HeroProps) => {
   const showSubscribeRow = showApple || showSpotify
   return (
     <>
-    <section className="hero-section relative pt-[4rem] md:pt-[6rem] pb-12 md:pb-0 md:min-h-[90vh] overflow-hidden">
+    <section className="hero-section relative pt-28 md:pt-[6rem] pb-12 md:pb-0 md:min-h-[90vh] overflow-hidden">
       {/* Hero Background Image - indexable - Desktop */}
       <figure className="hidden md:block absolute inset-0 z-0 m-0">
         <img

@@ -58,7 +58,7 @@ const PodcastTeam = () => {
           }
         }
       `}</style>
-      <section className="relative bg-primary pt-20 md:pt-28 pb-16 md:pb-20 overflow-hidden">
+      <section className="relative bg-primary pt-20 md:pt-28 pb-8 md:pb-10 overflow-hidden">
       {/* Section header */}
       <div className="relative z-10 max-w-container mx-auto px-6 md:px-12 text-center mb-10 md:mb-14">
         <div className="flex items-center justify-center gap-3 mb-4">
@@ -93,7 +93,7 @@ const PodcastTeam = () => {
             {/* Card */}
             <div
               onClick={() => handleAuthorClick(teamMembers[currentSlide].slug)}
-              className="absolute bottom-20 left-4 right-4 bg-white rounded-2xl shadow-lg p-4 cursor-pointer hover:shadow-xl transition-shadow"
+              className="absolute bottom-6 left-4 right-4 bg-white rounded-2xl shadow-lg p-4 cursor-pointer hover:shadow-xl transition-shadow"
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center gap-2.5">
@@ -124,6 +124,7 @@ const PodcastTeam = () => {
           </div>
 
           {/* Navigation Arrows - Stay in place outside animated content */}
+          {teamMembers.length > 1 && (
           <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-4 z-20">
             <button
               onClick={prevSlide}
@@ -164,6 +165,7 @@ const PodcastTeam = () => {
               </svg>
             </button>
           </div>
+          )}
         </div>
 
         {/* Desktop Grid */}

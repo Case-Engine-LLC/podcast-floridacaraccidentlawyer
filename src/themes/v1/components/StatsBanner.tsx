@@ -1,69 +1,100 @@
 'use client'
 
 import React from 'react'
-import { Star, ThumbsUp, Trophy } from 'lucide-react'
-import { stats } from '@/data/siteData'
+import { Car, MapPin, MessageSquare, Star, ThumbsUp } from 'lucide-react'
+import { offices, stats } from '@/data/siteData'
+
+// Pull a leading metric token (e.g. "$1M+", "500+") out of a label so the real
+// number can be the hero, with the remaining words as the caption.
+const splitLeadingMetric = (label?: string) => {
+  const m = /^(\$?[\d.,]+\s*[KMB]?\+?)\s+(.+)$/i.exec((label || '').trim())
+  return m ? { value: m[1].replace(/\s+/g, ''), label: m[2] } : null
+}
 
 const StatsBanner = () => {
-  const statItems = [
-    {
-      value: stats.rating ? String(stats.rating) : '',
-      label: stats.rating ? 'Positive Reviews' : '',
-      text: stats.ratingVerbalization,
-      Icon: Star,
-      cardClass: 'bg-secondary',
-      valueClass: 'text-white',
-      textClass: 'text-white',
-      bodyClass: 'text-white/85',
-    },
-    {
-      value: stats.satisfactionRate ? `${stats.satisfactionRate}%` : '',
-      label: stats.satisfactionLabel,
-      text: stats.satisfactionVerbalization,
-      Icon: ThumbsUp,
-      cardClass: 'bg-primary',
-      valueClass: 'text-secondary',
-      textClass: 'text-white',
-      bodyClass: 'text-white/80',
-    },
-    {
-      value: stats.casesHandled ? `${stats.casesHandled}+` : '',
-      label: stats.casesLabel,
-      text: stats.casesVerbalization,
-      Icon: Trophy,
-      cardClass: 'bg-secondary',
-      valueClass: 'text-white',
-      textClass: 'text-white',
-      bodyClass: 'text-white/85',
-    },
-  ].filter(item => item.value && item.label && item.text && !/TODO/i.test(item.text))
+  const officeCities = Array.from(new Set(offices.map(o => o.city).filter(Boolean)))
+  const recovery = splitLeadingMetric(stats.casesLabel)
 
-  if (statItems.length === 0) {
+  const tiles = [
+    stats.rating
+      ? { value: String(stats.rating), label: 'Positive Reviews', Icon: Star }
+      : null,
+    stats.reviewCount
+      ? { value: String(stats.reviewCount), label: 'Google Reviews', Icon: MessageSquare }
+      : null,
+    stats.satisfactionRate && stats.satisfactionLabel
+      ? { value: `${stats.satisfactionRate}%`, label: stats.satisfactionLabel, Icon: ThumbsUp }
+      : null,
+    recovery && stats.casesVerbalization && !/TODO/i.test(stats.casesVerbalization)
+      ? { value: recovery.value, label: recovery.label, Icon: Car, outline: true }
+      : stats.casesHandled && stats.casesLabel
+        ? { value: `${stats.casesHandled}+`, label: stats.casesLabel, Icon: Car, outline: true }
+        : null,
+    officeCities.length
+      ? {
+          value: String(offices.length),
+          label: offices.length === 1 ? 'Office Location' : 'Office Locations',
+          Icon: MapPin,
+        }
+      : null,
+  ].filter(
+    (t): t is { value: string; label: string; Icon: typeof Star; outline?: boolean } => Boolean(t),
+  )
+
+  if (tiles.length === 0) {
     return null
   }
 
-  const gridColsClass =
-    statItems.length === 1
-      ? 'grid-cols-1 max-w-md mx-auto'
-      : statItems.length === 2
-        ? 'grid-cols-1 sm:grid-cols-2 max-w-3xl mx-auto'
-        : 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3'
+  const colsClass =
+    tiles.length <= 2
+      ? 'grid-cols-2 max-w-2xl'
+      : tiles.length === 3
+        ? 'grid-cols-1 sm:grid-cols-3 max-w-4xl'
+        : tiles.length === 4
+          ? 'grid-cols-2 lg:grid-cols-4 max-w-5xl'
+          : 'grid-cols-2 lg:grid-cols-5 max-w-6xl'
+
+  const footnote = [stats.ratingVerbalization, officeCities.join(' · '), stats.casesVerbalization]
+    .filter(Boolean)
+    .join('  ·  ')
 
   return (
-    <section className="bg-white py-0 md:py-12">
-      <div className="max-w-container mx-auto px-6 md:px-12">
-        <div className={`grid ${gridColsClass} gap-6`}>
-          {statItems.map(({ value, label, text, Icon, cardClass, valueClass, textClass, bodyClass }) => (
-            <div key={label} className={`${cardClass} rounded-3xl px-6 py-8 md:px-5 md:py-10 text-left`}>
-              <div className="flex items-center justify-between mb-4 md:mb-6">
-                <span className={`${valueClass} text-4xl md:text-6xl font-bold`}>{value}</span>
-                <Icon size={56} className={valueClass} fill="currentColor" />
+    <section className="relative overflow-hidden bg-primary py-10 md:py-14">
+      {/* depth + gold ambience */}
+      <div aria-hidden className="absolute inset-0 bg-gradient-to-br from-[#232b36] via-primary to-[#13171d]" />
+      <div aria-hidden className="absolute -right-20 -top-28 h-96 w-96 rounded-full bg-secondary/10 blur-[110px]" />
+      <div aria-hidden className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-secondary/[0.06] blur-[120px]" />
+      <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-secondary/50 to-transparent" />
+
+      <div className="relative mx-auto max-w-container px-6 md:px-12">
+        <div className={`mx-auto grid ${colsClass} gap-x-6 gap-y-12`}>
+          {tiles.map(({ value, label, Icon, outline }) => (
+            <div key={label} className="group flex flex-col items-center text-center">
+              <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary/10 text-secondary ring-1 ring-secondary/25 transition-colors duration-300 group-hover:bg-secondary group-hover:text-primary">
+                {outline ? (
+                  <Icon size={26} strokeWidth={2} />
+                ) : (
+                  <Icon size={24} fill="currentColor" strokeWidth={0} />
+                )}
               </div>
-              <p className={`${textClass} text-xl md:text-2xl font-bold mb-3`}>{label}</p>
-              <p className={`${bodyClass} text-sm md:text-base leading-relaxed`}>{text}</p>
+              <span className="text-5xl font-extrabold leading-none tracking-tight text-secondary tabular-nums transition-transform duration-300 group-hover:-translate-y-0.5 md:text-6xl">
+                {value}
+              </span>
+              <span className="mt-3 text-sm font-semibold uppercase tracking-wide text-white/80 md:text-base">
+                {label}
+              </span>
             </div>
           ))}
         </div>
+
+        {footnote && (
+          <>
+            <div className="mx-auto mt-14 h-px max-w-3xl bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+            <p className="mx-auto mt-6 max-w-3xl text-center text-xs leading-relaxed text-white/45">
+              {footnote}
+            </p>
+          </>
+        )}
       </div>
     </section>
   )

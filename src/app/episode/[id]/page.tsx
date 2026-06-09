@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const canonicalPath = `/episode/${episode.slug ?? episode.id}`
 
   return {
-    title: `${episode.title} | The Eberst Law Podcast`,
+    title: `${episode.title} | The Eberst Advantage: Florida Accident & Injury Law Podcast`,
     description,
     alternates: {
       canonical: canonicalPath,
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       title: episode.title,
       description,
       url: `https://podcast-floridacaraccidentlawyer.vercel.app${canonicalPath}`,
-      siteName: 'The Eberst Law Podcast',
+      siteName: 'The Eberst Advantage: Florida Accident & Injury Law Podcast',
       type: 'article',
       images: [{ url: imageUrl, width: 1200, height: 630, alt: episode.title }],
     },

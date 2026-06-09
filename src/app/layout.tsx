@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'Eberst Law',
     'The Eberst Law Firm',
     'Jonathon Eberst',
-    'Eberst Law Podcast',
+    'The Eberst Advantage',
     'Florida accident attorney',
     'Florida personal injury lawyer',
     'Daytona Beach personal injury',

@@ -85,7 +85,7 @@ const About = () => {
           {/* Right Image */}
           <div className="w-full h-[480px] md:h-[580px] rounded-2xl overflow-hidden">
             <img
-              src="/about-placehoder.jpg"
+              src="/about-bg-final.jpg"
               alt={about.title}
               className="w-full h-full object-cover"
             />

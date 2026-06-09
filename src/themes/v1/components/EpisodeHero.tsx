@@ -27,18 +27,6 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
   const showPlatformRow = showApple || showSpotify
   return (
     <>
-      {/* Marquee Banner */}
-      <div className="bg-secondary py-4 overflow-hidden whitespace-nowrap -rotate-[2deg] transform origin-center">
-        <div className="flex animate-marquee">
-          <span className="text-black font-bold uppercase tracking-[0.3em] text-sm inline-block">
-            {siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;
-          </span>
-          <span className="text-black font-bold uppercase tracking-[0.3em] text-sm inline-block">
-            {siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;
-          </span>
-        </div>
-      </div>
-
       {/* Hero Section */}
       <section className="bg-white py-12 md:py-16">
         <div className="max-w-container mx-auto px-6 md:px-12">
@@ -141,13 +129,13 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
             </div>
 
             {/* Right Image - Episode Thumbnail */}
-            <div className="relative w-full h-[280px] md:h-[380px] flex items-center justify-center">
-              <div className="w-full h-full rounded-2xl overflow-hidden bg-gray-200">
+            <div className="relative w-full flex items-center justify-center">
+              <div className="w-full max-w-[480px] mx-auto aspect-square rounded-2xl overflow-hidden bg-gray-200">
                 {((ep as { logo?: string }).logo || fallbackArt) ? (
                   <img
                     src={(ep as { logo?: string }).logo || fallbackArt}
                     alt={ep.title}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover"
                   />
                 ) : null}
               </div>
