@@ -400,6 +400,11 @@
         "href": "#episodes"
       },
       {
+        "name": "Eberst Law",
+        "href": "https://eberstlaw.com",
+        "external": true
+      },
+      {
         "name": "About",
         "href": "#about"
       },
