@@ -45,7 +45,12 @@ export const episodes = data.episodes
 export const faqGroups = data.faqGroups
 export const footer = data.footer
 export const formConfig = data.formConfig
-export const navigation = data.navigation
+export const navigation: {
+  logo: string
+  items: { name: string; href: string; external?: boolean }[]
+  ctaText: string
+  ctaHref: string
+} = data.navigation
 export const offices: { name: string; address: string; city: string; state: string; zip: string; phone?: string }[] = data.offices
 export const podcastTeam = data.podcastTeam
 export const reviewsInstruction = data.reviewsInstruction
