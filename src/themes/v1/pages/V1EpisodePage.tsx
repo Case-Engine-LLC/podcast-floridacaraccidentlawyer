@@ -14,12 +14,12 @@ const episodeSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/episode/1#webpage",
-      "url": "https://podcast-floridacaraccidentlawyer.vercel.app/episode/1",
+      "@id": "https://www.floridacaraccident.lawyer/episode/1#webpage",
+      "url": "https://www.floridacaraccident.lawyer/episode/1",
       "name": "What Every Florida Driver Needs to Know in the First 72 Hours After a Crash | Episode 1 | The Eberst Advantage: Florida Accident & Injury Law Podcast",
       "description": "Jonathon T. Eberst and co-host Alexis walk through exactly what an injured Floridian should do in the first 72 hours after a crash - from medical care to the call you should not make.",
       "isPartOf": {
-        "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#website"
+        "@id": "https://www.floridacaraccident.lawyer/#website"
       },
       "inLanguage": "en-US",
       "speakable": {
@@ -38,36 +38,36 @@ const episodeSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://podcast-floridacaraccidentlawyer.vercel.app/"
+            "item": "https://www.floridacaraccident.lawyer/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Episodes",
-            "item": "https://podcast-floridacaraccidentlawyer.vercel.app/#episodes"
+            "item": "https://www.floridacaraccident.lawyer/#episodes"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "What Every Florida Driver Needs to Know in the First 72 Hours After a Crash",
-            "item": "https://podcast-floridacaraccidentlawyer.vercel.app/episode/1"
+            "item": "https://www.floridacaraccident.lawyer/episode/1"
           }
         ]
       }
     },
     {
       "@type": "PodcastEpisode",
-      "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/episode/1#episode",
+      "@id": "https://www.floridacaraccident.lawyer/episode/1#episode",
       "name": "What Every Florida Driver Needs to Know in the First 72 Hours After a Crash",
       "description": "In the debut episode of The Eberst Advantage: Florida Accident & Injury Law Podcast, host Jonathon T. Eberst and co-host Alexis walk through exactly what an injured Floridian should do in the first 72 hours after a car accident - what to say (and not say) to the adjuster, why late-onset neck and back pain doesn't mean it's too late, how Florida's comparative fault rules actually work, and why insurance carriers open every file hoping you settle before you learn any of this. TODO: finalize title, description, and episode art from final recording and show notes.",
       "episodeNumber": 1,
-      "url": "https://podcast-floridacaraccidentlawyer.vercel.app/episode/1",
-      "image": "https://podcast-floridacaraccidentlawyer.vercel.app/cover.jpg",
+      "url": "https://www.floridacaraccident.lawyer/episode/1",
+      "image": "https://www.floridacaraccident.lawyer/cover.jpg",
       "partOfSeries": {
-        "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#podcast"
+        "@id": "https://www.floridacaraccident.lawyer/#podcast"
       },
       "author": {
-        "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#host"
+        "@id": "https://www.floridacaraccident.lawyer/#host"
       },
       "publisher": {
         "@id": "https://eberstlaw.com/#org"
@@ -89,7 +89,7 @@ const episodeSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/episode/1#faq",
+      "@id": "https://www.floridacaraccident.lawyer/episode/1#faq",
       "mainEntity": [
         {
           "@type": "Question",

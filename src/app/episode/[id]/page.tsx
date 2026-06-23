@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const description = episode.description.length > 200
     ? episode.description.slice(0, 200) + '...'
     : episode.description
-  const imageUrl = episode.logo || 'https://podcast-floridacaraccidentlawyer.vercel.app/Hero.jpg'
+  const imageUrl = episode.logo || 'https://www.floridacaraccident.lawyer/Hero.jpg'
   const canonicalPath = `/episode/${episode.slug ?? episode.id}`
 
   return {
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     openGraph: {
       title: episode.title,
       description,
-      url: `https://podcast-floridacaraccidentlawyer.vercel.app${canonicalPath}`,
+      url: `https://www.floridacaraccident.lawyer${canonicalPath}`,
       siteName: 'The Eberst Advantage: Florida Accident & Injury Law Podcast',
       type: 'article',
       images: [{ url: imageUrl, width: 1200, height: 630, alt: episode.title }],

@@ -27,13 +27,13 @@ const homeSchema = {
       "url": "https://eberstlaw.com/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://podcast-floridacaraccidentlawyer.vercel.app/logo.svg",
+        "url": "https://www.floridacaraccident.lawyer/logo.svg",
         "width": 200,
         "height": 60
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://podcast-floridacaraccidentlawyer.vercel.app/Hero.jpg",
+        "url": "https://www.floridacaraccident.lawyer/Hero.jpg",
         "width": 1200,
         "height": 630
       },
@@ -72,8 +72,8 @@ const homeSchema = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#website",
-      "url": "https://podcast-floridacaraccidentlawyer.vercel.app/",
+      "@id": "https://www.floridacaraccident.lawyer/#website",
+      "url": "https://www.floridacaraccident.lawyer/",
       "name": "The Eberst Advantage: Florida Accident & Injury Law Podcast",
       "description": "A podcast by Jonathon T. Eberst of The Eberst Law Firm helping injured Floridians understand car, truck, motorcycle, and catastrophic injury claims.",
       "publisher": {
@@ -84,19 +84,19 @@ const homeSchema = {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://podcast-floridacaraccidentlawyer.vercel.app/?s={search_term_string}"
+          "urlTemplate": "https://www.floridacaraccident.lawyer/?s={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }
     },
     {
       "@type": "WebPage",
-      "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#webpage",
-      "url": "https://podcast-floridacaraccidentlawyer.vercel.app/",
+      "@id": "https://www.floridacaraccident.lawyer/#webpage",
+      "url": "https://www.floridacaraccident.lawyer/",
       "name": "The Eberst Advantage: Florida Accident & Injury Law Podcast | The Eberst Law Firm",
       "description": "Jonathon Eberst covers Florida personal injury - PIP, UM/UIM, evidence preservation, and how insurance carriers really evaluate claims.",
       "isPartOf": {
-        "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#website"
+        "@id": "https://www.floridacaraccident.lawyer/#website"
       },
       "about": {
         "@id": "https://eberstlaw.com/#org"
@@ -118,26 +118,26 @@ const homeSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://podcast-floridacaraccidentlawyer.vercel.app/"
+            "item": "https://www.floridacaraccident.lawyer/"
           }
         ]
       }
     },
     {
       "@type": "PodcastSeries",
-      "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#podcast",
+      "@id": "https://www.floridacaraccident.lawyer/#podcast",
       "name": "The Eberst Advantage: Florida Accident & Injury Law Podcast",
       "description": "The Eberst Advantage: Florida Accident & Injury Law Podcast covers Florida personal injury law from the plaintiff side - how to handle the first 72 hours after a crash, PIP and UM/UIM coverage, nursing-home neglect, and what insurance companies do not want injured Floridians to know.",
-      "url": "https://podcast-floridacaraccidentlawyer.vercel.app/",
-      "image": "https://podcast-floridacaraccidentlawyer.vercel.app/Hero.jpg",
+      "url": "https://www.floridacaraccident.lawyer/",
+      "image": "https://www.floridacaraccident.lawyer/Hero.jpg",
       "author": {
         "@type": "Person",
-        "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#host",
+        "@id": "https://www.floridacaraccident.lawyer/#host",
         "name": "Jonathon T. Eberst",
         "givenName": "Jonathon",
         "familyName": "T. Eberst",
         "jobTitle": "Founding Attorney & Podcast Host",
-        "image": "https://podcast-floridacaraccidentlawyer.vercel.app/headshot-jonathon-eberst.jpg",
+        "image": "https://www.floridacaraccident.lawyer/headshot-jonathon-eberst.jpg",
         "worksFor": {
           "@id": "https://eberstlaw.com/#org"
         },
@@ -162,7 +162,7 @@ const homeSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://podcast-floridacaraccidentlawyer.vercel.app/#faq",
+      "@id": "https://www.floridacaraccident.lawyer/#faq",
       "mainEntity": [
         {
           "@type": "Question",
