@@ -106,7 +106,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
-        <Analytics gtmId={process.env.NEXT_PUBLIC_GTM_ID || 'GTM-MKG8627L'} />
+        <Analytics gtmId={process.env.NEXT_PUBLIC_GTM_ID || 'GTM-PSBJWVBR'} ga4Id={process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || 'G-N6JTH9EGN8'} />
       </body>
     </html>
   )
