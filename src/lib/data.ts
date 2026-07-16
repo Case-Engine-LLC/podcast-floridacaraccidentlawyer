@@ -1,6 +1,6 @@
 import { fetchPodcastFeed, fetchTranscript as fetchRssTranscript, type RSSEpisode, type TranscriptSegment } from './rss'
 import { generatedTranscripts, TRANSCRIPTS_BY_GUID } from '@/data/transcripts.generated'
-import { episodes as staticEpisodes, siteConfig } from '@/data/siteData'
+import { episodeOverrides, episodes as staticEpisodes, siteConfig } from '@/data/siteData'
 
 // Prefer env var (Vercel project setting), fall back to siteData.rssFeedUrl
 // so the build still has a wired feed if the env var is not set.
@@ -17,7 +17,10 @@ export interface Episode {
   guid?: string
   slug?: string
   number: number
+  sourceNumber?: number
   title: string
+  seoTitle?: string
+  seoDescription?: string
   subtitle: string
   description: string
   duration: string
@@ -40,7 +43,11 @@ function normalizeEpisodeKey(value: string | undefined): string {
 }
 
 function findStaticEpisodeOverride(ep: RSSEpisode, generatedSlug: string): Episode | null {
-  const staticEpisode = (staticEpisodes as Record<string, unknown>[]).find((candidate) => {
+  const candidates = [
+    ...(episodeOverrides as Record<string, unknown>[]),
+    ...(staticEpisodes as Record<string, unknown>[]),
+  ]
+  const staticEpisode = candidates.find((candidate) => {
     const candidateSlug = candidate.slug as string | undefined
     const candidateTitle = candidate.title as string | undefined
     const candidateGuid = (candidate.guid || candidate.rssGuid || candidate.sourceGuid) as string | undefined
@@ -55,16 +62,22 @@ function findStaticEpisodeOverride(ep: RSSEpisode, generatedSlug: string): Episo
   return staticEpisode ? normalizeStaticEpisode(staticEpisode) : null
 }
 
-function rssEpisodeToEpisode(ep: RSSEpisode): Episode {
+function rssEpisodeToEpisode(ep: RSSEpisode, displayNumber: number): Episode {
   const generatedSlug = slugifyEpisode(ep.title, String(ep.id))
   const override = findStaticEpisodeOverride(ep, generatedSlug)
 
   return {
-    id: ep.id,
+    // Flightcast reuses itunes:episode for location-specific cuts. A unique,
+    // chronological site number keeps React keys, links, schema, and footer
+    // labels aligned while sourceNumber preserves the feed's original value.
+    id: displayNumber,
     guid: ep.guid,
     slug: override?.slug || generatedSlug,
-    number: ep.id,
+    number: displayNumber,
+    sourceNumber: ep.id,
     title: override?.title || ep.title,
+    seoTitle: override?.seoTitle,
+    seoDescription: override?.seoDescription,
     subtitle: override?.subtitle || ep.subtitle,
     description: override?.description || ep.description,
     duration: override?.duration || ep.duration,
@@ -89,7 +102,10 @@ function normalizeStaticEpisode(ep: Record<string, unknown>): Episode {
     guid: (ep.guid as string) || undefined,
     slug: (ep.slug as string) || slugifyEpisode((ep.title as string) || '', String((ep.id as number) ?? 1)),
     number: (ep.number as number) ?? (ep.id as number) ?? 1,
+    sourceNumber: (ep.sourceNumber as number) ?? (ep.number as number) ?? (ep.id as number) ?? 1,
     title: (ep.title as string) ?? '',
+    seoTitle: (ep.seoTitle as string) || undefined,
+    seoDescription: (ep.seoDescription as string) || undefined,
     subtitle: (ep.subtitle as string) ?? '',
     description: (ep.description as string) ?? '',
     duration: (ep.duration as string) ?? '',
@@ -122,7 +138,9 @@ export async function getAllEpisodes(): Promise<Episode[]> {
 
   try {
     const feed = await fetchPodcastFeed(RSS_URL)
-    const episodes = feed.episodes.map(rssEpisodeToEpisode)
+    const episodes = feed.episodes.map((episode, index) =>
+      rssEpisodeToEpisode(episode, feed.episodes.length - index)
+    )
     feedCache = { episodes, fetchedAt: Date.now() }
     return episodes
   } catch (e) {
@@ -169,7 +187,7 @@ export async function getEpisodeTranscript(episode: Episode): Promise<Transcript
   }
 
   // Serve the staged transcript for ANY episode that has one (was gated to ep1).
-  return generatedTranscripts[episode.id] ?? []
+  return generatedTranscripts[episode.sourceNumber ?? episode.id] ?? []
 }
 
 export async function getEpisodeTopics(episodes: Episode[]): Promise<string[]> {

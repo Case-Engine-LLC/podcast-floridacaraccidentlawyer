@@ -13,6 +13,7 @@ const inter = Inter({
 })
 
 const SITE_URL = siteConfig.podcastUrl || 'https://www.floridacaraccident.lawyer'
+const SITE_DESCRIPTION = siteConfig.seoDescription || about.description
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     default: siteConfig.podcastName,
     template: `%s | ${siteConfig.podcastName}`,
   },
-  description: about.description,
+  description: SITE_DESCRIPTION,
   applicationName: siteConfig.podcastName,
   authors: [
     { name: attorney.name, url: SITE_URL },
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: siteConfig.podcastName,
     title: siteConfig.podcastName,
-    description: about.description,
+    description: SITE_DESCRIPTION,
     url: SITE_URL,
     locale: 'en_US',
     images: [
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: siteConfig.podcastName,
-    description: about.description,
+    description: SITE_DESCRIPTION,
     images: ['/opengraph-image'],
   },
   icons: {

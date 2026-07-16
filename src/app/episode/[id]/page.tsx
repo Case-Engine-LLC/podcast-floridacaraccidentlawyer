@@ -5,6 +5,14 @@ import { getAllEpisodes, getEpisodeByIdOrSlug, getEpisodeTranscript } from '@/li
 
 export const revalidate = 3600
 
+function metaDescription(value: string): string {
+  const normalized = value.replace(/\s+/g, ' ').trim()
+  if (normalized.length <= 160) return normalized
+  const clipped = normalized.slice(0, 157)
+  const lastSpace = clipped.lastIndexOf(' ')
+  return `${clipped.slice(0, lastSpace > 120 ? lastSpace : 157).trimEnd()}...`
+}
+
 export async function generateStaticParams() {
   try {
     const episodes = await getAllEpisodes()
@@ -22,14 +30,12 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     return { title: 'Episode Not Found' }
   }
 
-  const description = episode.description.length > 200
-    ? episode.description.slice(0, 200) + '...'
-    : episode.description
+  const description = metaDescription(episode.seoDescription || episode.description)
   const imageUrl = episode.logo || 'https://www.floridacaraccident.lawyer/Hero.jpg'
   const canonicalPath = `/episode/${episode.slug ?? episode.id}`
 
   return {
-    title: `${episode.title} | The Eberst Advantage: Florida Accident & Injury Law Podcast`,
+    title: episode.seoTitle ? { absolute: episode.seoTitle } : episode.title,
     description,
     alternates: {
       canonical: canonicalPath,

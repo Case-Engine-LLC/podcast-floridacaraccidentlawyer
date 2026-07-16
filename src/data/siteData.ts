@@ -42,6 +42,7 @@ export const episode = data.episode
 export const episodeLocations = data.episodeLocations
 export const episodeTopics = data.episodeTopics
 export const episodes = data.episodes
+export const episodeOverrides = data.episodeOverrides
 export const faqGroups = data.faqGroups
 export const footer = data.footer
 export const formConfig = data.formConfig

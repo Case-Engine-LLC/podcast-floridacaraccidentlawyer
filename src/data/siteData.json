@@ -260,6 +260,15 @@
       "slug": "what-every-florida-driver-needs-to-know-in-the-first-72-hours-after-a-crash"
     }
   ],
+  "episodeOverrides": [
+    {
+      "guid": "flightcast:01KS5HCKVPQ3JNWXSQS8GDMSPK",
+      "slug": "the-you-interview-with-jonathon-eberst",
+      "title": "The YOU Interview with Jonathon Eberst",
+      "seoTitle": "Meet Jonathon Eberst | The Eberst Advantage Podcast",
+      "seoDescription": "In this episode of The Eberst Advantage, meet Jonathon Eberst, the Florida injury attorney who founded Eberst Law in 2009 and built a statewide firm."
+    }
+  ],
   "faqGroups": [
     {
       "label": "About the Podcast",
@@ -456,6 +465,7 @@
   "rotationAttorneys": [],
   "siteConfig": {
     "podcastName": "The Eberst Advantage: Florida Accident & Injury Law Podcast",
+    "seoDescription": "The Eberst Advantage: real Florida accident & injury cases broken down like a war room, what insurers hope you don't know and how to win.",
     "attorneyHandle": "",
     "tagline": "This isn't a battle, this is a war - and we're here to teach you how to win it.",
     "taglineCandidates": [

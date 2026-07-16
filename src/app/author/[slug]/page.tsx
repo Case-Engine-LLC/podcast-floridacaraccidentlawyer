@@ -11,9 +11,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const author = authorProfiles[slug]
   if (!author) return { title: 'Author Not Found' }
 
+  const canonicalPath = `/author/${slug}`
+
   return {
-    title: `${author.name} - ${author.title} | ${siteConfig.podcastName}`,
+    title: `${author.name} - ${author.title}`,
     description: author.bio[0],
+    alternates: {
+      canonical: canonicalPath,
+    },
+    openGraph: {
+      title: `${author.name} - ${author.title}`,
+      description: author.bio[0],
+      url: `${siteConfig.podcastUrl}${canonicalPath}`,
+    },
   }
 }
 
