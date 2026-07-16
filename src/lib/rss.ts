@@ -54,6 +54,14 @@ function getAttr(node: Record<string, unknown>, attr: string): string {
   return (node?.[`@_${attr}`] as string) ?? ''
 }
 
+function getNodeText(node: unknown): string {
+  if (node == null) return ''
+  if (typeof node === 'object') {
+    return String((node as Record<string, unknown>)['#text'] ?? '')
+  }
+  return String(node)
+}
+
 // Decode HTML/numeric entities so React doesn't re-encode them (otherwise
 // `&#39;` in the RSS feed renders as the literal text "&#39;" on the page).
 function decodeEntities(s: string): string {
@@ -143,7 +151,10 @@ export async function fetchPodcastFeed(rssUrl: string): Promise<PodcastFeed> {
 
     return {
       id: episodeNum,
-      guid: String(item.guid ?? item.link ?? `ep-${episodeNum}`),
+      // fast-xml-parser returns GUIDs with attributes as
+      // { '#text': '...', '@_isPermaLink': 'false' }. Normalizing the text
+      // keeps GUID-based episode overrides and transcript lookups reliable.
+      guid: getNodeText(item.guid) || String(item.link ?? `ep-${episodeNum}`),
       title: decodeEntities(String(item.title ?? '')),
       subtitle: decodeEntities(String(item['itunes:subtitle'] ?? '').slice(0, 120)),
       description: decodeEntities(String(item.description ?? item['content:encoded'] ?? '').replace(/<[^>]*>/g, '')),
