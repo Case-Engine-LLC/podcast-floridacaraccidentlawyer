@@ -4,6 +4,9 @@ import V1EpisodePage from '@/themes/v1/pages/V1EpisodePage'
 import { getAllEpisodes, getEpisodeByIdOrSlug, getEpisodeTranscript } from '@/lib/data'
 
 export const revalidate = 3600
+// Preserve older published episode URLs even when they are no longer present
+// in the current RSS feed; the handler resolves them from static fallbacks.
+export const dynamicParams = true
 
 function metaDescription(value: string): string {
   const normalized = value.replace(/\s+/g, ' ').trim()

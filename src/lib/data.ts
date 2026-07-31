@@ -165,7 +165,18 @@ export async function getEpisodeByIdOrSlug(idOrSlug: string): Promise<Episode | 
   if (bySlug) return bySlug
   const n = Number(idOrSlug)
   if (Number.isFinite(n)) return episodes.find(ep => ep.id === n) ?? null
-  return null
+
+  // Keep previously published episode URLs resolvable when the RSS provider
+  // drops or renames an item. The homepage and sitemap may still expose the
+  // canonical static slug, so returning null here creates a public 404 even
+  // though we still have the episode's complete static record.
+  const staticFallback = ([
+    ...(staticEpisodes as Record<string, unknown>[]),
+    ...(episodeOverrides as Record<string, unknown>[]),
+  ])
+    .map(normalizeStaticEpisode)
+    .find(ep => ep.slug === idOrSlug)
+  return staticFallback ?? null
 }
 
 export async function getEpisodeTranscript(episode: Episode): Promise<TranscriptSegment[]> {
