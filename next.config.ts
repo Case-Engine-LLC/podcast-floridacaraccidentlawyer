@@ -19,12 +19,12 @@ const nextConfig: NextConfig = {
       { source: '/v3/:path*', destination: '/:path*', permanent: true },
       {
         source: '/episode/the-you-interview-w-jonathon-eberst',
-        destination: '/episode/the-you-interview-with-jonathon-eberst',
+        destination: '/',
         permanent: true,
       },
       {
         source: '/episode/what-every-florida-driver-needs-to-know-in-the-first-72-hours-after-a-crash',
-        destination: '/episode/the-you-interview-with-jonathon-eberst',
+        destination: '/',
         permanent: true,
       },
       { source: '/privacy', destination: 'https://eberstlaw.com/privacy-policy/', permanent: true },
