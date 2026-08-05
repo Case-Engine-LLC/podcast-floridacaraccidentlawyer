@@ -120,7 +120,7 @@ const episodeSchema = {
           "name": "How can I reach The Eberst Law Firm after this episode?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Contact The Eberst Law Firm at eberstlaw.com or by calling (772) 225-4900. Consultations are free, cases are handled on contingency, and the firm serves clients from Stuart, Gainesville, and Daytona Beach."
+            "text": "Contact The Eberst Law Firm at eberstlaw.com or by calling +1 (386) 845-8755. Consultations are free, cases are handled on contingency, and the firm serves clients from Stuart, Gainesville, and Daytona Beach."
           }
         }
       ]

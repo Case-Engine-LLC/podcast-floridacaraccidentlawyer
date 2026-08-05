@@ -27,6 +27,6 @@ export const episodeTranscript = [
   {
     timestamp: "40:00",
     speaker: "Jonathon T. Eberst",
-    text: "[CTA & Outro, 1:00-2:00] - closing CTA with all three Florida office numbers: '772-225-4900 Stuart, 352-269-0017 Gainesville, 386-224-6544 Daytona Beach, or toll-free 1-888-CALL-JON.' Mention free consultations 24/7 and contingency fee - 'we don't get paid unless we win your case.' Followed by the Florida Bar Rule 4-7 disclaimer block: attorney advertising, no attorney-client relationship formed by listening, past results do not guarantee future outcomes.",
+    text: "[CTA & Outro, 1:00-2:00] - closing CTA with the current GBP phone: '+1 386-845-8755', or toll-free at 1-888-CALL-JON. Mention free consultations 24/7 and contingency fee - 'we don't get paid unless we win your case.' Followed by the Florida Bar Rule 4-7 disclaimer block: attorney advertising, no attorney-client relationship formed by listening, past results do not guarantee future outcomes.",
   },
 ]
