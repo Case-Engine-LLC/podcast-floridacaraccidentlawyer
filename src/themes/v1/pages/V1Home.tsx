@@ -38,7 +38,7 @@ const homeSchema = {
         "height": 630
       },
       "description": "The Eberst Law Firm is a Florida personal injury firm founded in 2009 by Jonathon T. Eberst. The firm operates from Stuart (headquarters), Gainesville, and Daytona Beach and represents injured Floridians in car, truck, motorcycle, catastrophic injury, and wrongful death matters.",
-      "telephone": "+17722254900",
+      "telephone": "+13868458755",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "117 SE Seminole Street",
@@ -193,7 +193,7 @@ const homeSchema = {
           "name": "How do I contact The Eberst Law Firm?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Jonathon and Alexis welcome listener questions and case scenarios through eberstlaw.com or at (772) 225-4900. Consultations are free, cases are handled on contingency - no attorney’s fees unless a recovery is obtained - and the firm serves clients from Stuart, Gainesville, and Daytona Beach."
+            "text": "Jonathon and Alexis welcome listener questions and case scenarios through eberstlaw.com or at +1 (386) 845-8755. Consultations are free, cases are handled on contingency - no attorney’s fees unless a recovery is obtained - and the firm serves clients from Stuart, Gainesville, and Daytona Beach."
           }
         }
       ]
