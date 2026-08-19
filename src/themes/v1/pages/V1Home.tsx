@@ -177,7 +177,7 @@ const homeSchema = {
           "name": "How often are new episodes released?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Eberst Advantage: Florida Accident & Injury Law Podcast publishes on a weekly, evergreen cadence. Episodes run 40–70 minutes and cover one topic in depth. Subscribe via the platform links in the footer to be notified when each episode drops."
+            "text": "The Eberst Advantage: Florida Accident & Injury Law Podcast publishes on an ongoing, evergreen cadence. Episodes run 40–70 minutes and cover one topic in depth. Subscribe via the platform links in the footer to be notified when each episode drops."
           }
         },
         {
