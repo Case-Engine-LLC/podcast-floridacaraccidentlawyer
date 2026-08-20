@@ -282,7 +282,7 @@
         {
           "question": "How Often Are New Episodes Released?",
           "level": "h3",
-          "answer": "The Eberst Advantage: Florida Accident & Injury Law Podcast publishes on a weekly, evergreen cadence. Episodes run 40 to 50 minutes each (target 45) and are organized by scenario and practice area - car accidents, trucking, nursing home, hurricane claims, medical malpractice - rather than numbered seasons."
+          "answer": "The Eberst Advantage: Florida Accident & Injury Law Podcast publishes on an ongoing, evergreen cadence. Episodes run 40 to 50 minutes each (target 45) and are organized by scenario and practice area - car accidents, trucking, nursing home, hurricane claims, medical malpractice - rather than numbered seasons."
         },
         {
           "question": "Who is The Target Audience?",
@@ -325,7 +325,7 @@
   ],
   "footer": {
     "logo": "The Eberst Law Firm",
-    "description": "The Eberst Advantage: Florida Accident & Injury Law Podcast is a weekly show for injured Floridians on the east coast dealing with car accidents, trucking wrecks, nursing home abuse, medical malpractice, and hurricane damage claims. Hosted by The Eberst Law Firm founding attorney Jonathon T. Eberst, every episode anchors to Florida law and the real insurance landscape victims are up against.",
+    "description": "The Eberst Advantage: Florida Accident & Injury Law Podcast is a show for injured Floridians on the east coast dealing with car accidents, trucking wrecks, nursing home abuse, medical malpractice, and hurricane damage claims. Hosted by The Eberst Law Firm founding attorney Jonathon T. Eberst, every episode anchors to Florida law and the real insurance landscape victims are up against.",
     "copyright": "The Eberst Law Firm",
     "socialLinks": {
       "facebook": "https://www.facebook.com/eberstlaw",
@@ -476,7 +476,7 @@
     "rssFeedUrl": "https://rss2.flightcast.com/ldkfkjxppnzt3odgxg7zcmhx.xml",
     "format": "Interview-based, video-first (recorded on Riverside.fm)",
     "episodeLengthMinutes": "40-50",
-    "cadence": "Weekly, evergreen",
+    "cadence": "Evergreen, ongoing",
     "platformLinks": {
       "apple": "https://podcasts.apple.com/us/channel/the-eberst-advantage/id6769171866",
       "spotify": "https://open.spotify.com/user/31xw3ghs6ds54gcptqfuweohs5hq"
@@ -500,7 +500,7 @@
   },
   "subscribeCTA": {
     "title": "Never Miss an Episode",
-    "description": "Subscribe to The Eberst Advantage: Florida Accident & Injury Law Podcast to get the war-room view of how Florida injury and insurance claims actually get valued, fought, and paid. Each weekly episode anchors to Florida law and to the real east-coast Florida scenarios - Treasure Coast car accidents, I-95 trucking wrecks, nursing home abuse, and denied hurricane claims - with plain-language answers from a trial lawyer.",
+    "description": "Subscribe to The Eberst Advantage: Florida Accident & Injury Law Podcast to get the war-room view of how Florida injury and insurance claims actually get valued, fought, and paid. Each episode anchors to Florida law and to the real east-coast Florida scenarios - Treasure Coast car accidents, I-95 trucking wrecks, nursing home abuse, and denied hurricane claims - with plain-language answers from a trial lawyer.",
     "highlights": [
       "War-room breakdowns of real Florida injury and insurance scenarios",
       "Florida-anchored law - comparative fault, PIP/BI/UM-UIM, hurricane claim rules, Florida Bar Rule 4-7",
