@@ -70,25 +70,7 @@ const homeSchema = {
         "ratingCount": "35"
       }
     },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.floridacaraccident.lawyer/#website",
-      "url": "https://www.floridacaraccident.lawyer/",
-      "name": "The Eberst Advantage: Florida Accident & Injury Law Podcast",
-      "description": "A podcast by Jonathon T. Eberst of The Eberst Law Firm helping injured Floridians understand car, truck, motorcycle, and catastrophic injury claims.",
-      "publisher": {
-        "@id": "https://eberstlaw.com/#org"
-      },
-      "inLanguage": "en-US",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.floridacaraccident.lawyer/?s={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
-    },
+    
     {
       "@type": "WebPage",
       "@id": "https://www.floridacaraccident.lawyer/#webpage",
@@ -123,43 +105,7 @@ const homeSchema = {
         ]
       }
     },
-    {
-      "@type": "PodcastSeries",
-      "@id": "https://www.floridacaraccident.lawyer/#podcast",
-      "name": "The Eberst Advantage: Florida Accident & Injury Law Podcast",
-      "description": "The Eberst Advantage: Florida Accident & Injury Law Podcast covers Florida personal injury law from the plaintiff side - how to handle the first 72 hours after a crash, PIP and UM/UIM coverage, nursing-home neglect, and what insurance companies do not want injured Floridians to know.",
-      "url": "https://www.floridacaraccident.lawyer/",
-      "image": "https://www.floridacaraccident.lawyer/Hero.jpg",
-      "author": {
-        "@type": "Person",
-        "@id": "https://www.floridacaraccident.lawyer/#host",
-        "name": "Jonathon T. Eberst",
-        "givenName": "Jonathon",
-        "familyName": "T. Eberst",
-        "jobTitle": "Founding Attorney & Podcast Host",
-        "image": "https://www.floridacaraccident.lawyer/headshot-jonathon-eberst.jpg",
-        "worksFor": {
-          "@id": "https://eberstlaw.com/#org"
-        },
-        "sameAs": [
-          "https://eberstlaw.com/"
-        ],
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "name": "Barry University School of Law"
-        }
-      },
-      "webFeed": [],
-      "genre": [
-        "Legal",
-        "Personal Injury Law",
-        "Education"
-      ],
-      "inLanguage": "en-US",
-      "publisher": {
-        "@id": "https://eberstlaw.com/#org"
-      }
-    },
+    
     {
       "@type": "FAQPage",
       "@id": "https://www.floridacaraccident.lawyer/#faq",
