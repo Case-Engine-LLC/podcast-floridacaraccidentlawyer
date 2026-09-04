@@ -45,7 +45,7 @@
  */
 import type { TranscriptSegment } from '@/lib/rss'
 
-export const generatedTranscripts: Record<number, TranscriptSegment[]> = {
+export const generatedTranscripts: Record<string, TranscriptSegment[]> = {
   1: [
     {
       "timestamp": "00:00",
