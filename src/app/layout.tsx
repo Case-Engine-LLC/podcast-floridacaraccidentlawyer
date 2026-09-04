@@ -5,6 +5,7 @@ import SchemaJsonLd from '@/components/SchemaJsonLd'
 import { siteConfig, about, attorney } from '@/data/siteData'
 import './globals.css'
 import '@/themes/v1/variables.css'
+import { AgentTools } from '@/components/AgentTools'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -108,6 +109,7 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
         <Analytics gtmId={process.env.NEXT_PUBLIC_GTM_ID || 'GTM-PSBJWVBR'} ga4Id={process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || 'G-N6JTH9EGN8'} />
+        <AgentTools />
       </body>
     </html>
   )
