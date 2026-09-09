@@ -90,9 +90,10 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
 
           {/* Content */}
           <div className="max-w-5xl">
-            {/* Overview Tab */}
-            {activeTab === 'Overview' && (
-              <>
+            {/* Overview Tab — always rendered (not unmounted) so it's present in
+                the server-rendered HTML for crawlers and no-JS clients; `hidden`
+                only toggles visibility once JS hydrates. */}
+            <div hidden={activeTab !== 'Overview'}>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                   {content.articleTitle}
                 </h2>
@@ -118,12 +119,12 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
                     ))}
                   </div>
                 )}
-              </>
-            )}
+            </div>
 
-            {/* Transcript Tab */}
-            {activeTab === 'Transcript' && (
-              <>
+            {/* Transcript Tab — always rendered so the full transcript ships in
+                the initial HTML (crawlable, no-JS visible); `hidden` toggles
+                display once JS hydrates. */}
+            <div hidden={activeTab !== 'Transcript'}>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                   Episode Transcript
                 </h2>
@@ -146,12 +147,10 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
                     {isExpanded ? 'Show Less' : `Read Full Transcript (${episodeTranscript.length} segments)`}
                   </button>
                 )}
-              </>
-            )}
+            </div>
 
             {/* Key Takeaways Tab */}
-            {activeTab === 'Key Takeaways' && (
-              <div className="key-takeaways">
+            <div className="key-takeaways" hidden={activeTab !== 'Key Takeaways'}>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                   Key Takeaways
                 </h2>
@@ -181,8 +180,7 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
                   </p>
                   <p className="text-white/50 mt-4">- {attorney.name}, {attorney.firm}</p>
                 </div>
-              </div>
-            )}
+            </div>
           </div>
         </div>
       </div>
