@@ -11,6 +11,10 @@ import { NextResponse, type NextRequest } from 'next/server'
  * No env flips, no post-launch toggle: connect the real domain and it indexes.
  */
 export function middleware(req: NextRequest) {
+  if (req.nextUrl.pathname.startsWith('/episode/')) {
+    return NextResponse.redirect(new URL('/', req.url), 308)
+  }
+
   const res = NextResponse.next()
   const host = req.headers.get('host') ?? ''
   if (host.endsWith('.vercel.app')) {
