@@ -25,21 +25,12 @@ const OtherEpisodes = ({ episodes: propEpisodes }: OtherEpisodesProps) => {
     image: (ep as { logo?: string }).logo ?? null,
   }))
 
-  // Use the most recent real episode's cover as the Coming Soon thumbnail
-  // so unreleased slots don't fall through to a missing placeholder file.
-  const fallbackCover = realEpisodes[0]?.image ?? null
-  const comingSoonSlots = Math.max(0, 3 - realEpisodes.length)
-  const comingSoon = Array.from({ length: comingSoonSlots }, (_, i) => ({
-    slug: undefined,
-    id: `coming-${realEpisodes.length + i + 1}`,
-    title: 'Coming Soon: New Attorney Interview',
-    episodeNumber: `Episode ${realEpisodes.length + i + 1}`,
-    category: 'Personal Injury',
-    duration: 'TBA',
-    image: fallbackCover,
-  }))
-
-  const episodes = [...realEpisodes, ...comingSoon]
+  // No invented episodes. This used to pad the carousel out to three with
+  // "Coming Soon: New Attorney Interview" cards, which put episodes we had not
+  // recorded on a live client page — and in Sept 2026, while the client was
+  // refilming the season, promised episodes nobody had agreed to. Show the real
+  // episodes or show nothing.
+  const episodes = realEpisodes
 
   const maxIndex = Math.max(0, episodes.length - 3)
 
@@ -52,6 +43,10 @@ const OtherEpisodes = ({ episodes: propEpisodes }: OtherEpisodesProps) => {
   }
 
   const progressPercentage = maxIndex > 0 ? (currentIndex / maxIndex) * 100 : 0
+
+  // Nothing real to list — render nothing rather than an empty "Other
+  // Episodes" shelf.
+  if (episodes.length === 0) return null
 
   return (
     <section className="py-16 md:py-20 bg-white">
