@@ -150,9 +150,13 @@ function dedupeBySlug(episodes: Episode[]): Episode[] {
   return episodes.filter(ep => best.get(ep.slug || String(ep.id)) === ep)
 }
 
+function staticEpisodeList(): Episode[] {
+  return dedupeBySlug((staticEpisodes as Record<string, unknown>[]).map(normalizeStaticEpisode))
+}
+
 export async function getAllEpisodes(): Promise<Episode[]> {
   if (!RSS_URL) {
-    return dedupeBySlug((staticEpisodes as Record<string, unknown>[]).map(normalizeStaticEpisode))
+    return staticEpisodeList()
   }
 
   // Simple in-memory cache for same request cycle
@@ -167,11 +171,20 @@ export async function getAllEpisodes(): Promise<Episode[]> {
         rssEpisodeToEpisode(episode, feed.episodes.length - index)
       )
     )
+    // A feed that parses but carries zero <item>s is not "this show has no
+    // episodes" — the Flightcast feed has returned an empty channel since the
+    // Sept 2026 takedown. Treating that as an answer emptied the sitemap, the
+    // agent API and llms.txt, and made /episode/<slug> resolve or 404 depending
+    // on whether the fetch happened to throw. Fall back to static data exactly
+    // as a failed fetch does, and don't cache the empty result.
+    if (episodes.length === 0) {
+      return staticEpisodeList()
+    }
     feedCache = { episodes, fetchedAt: Date.now() }
     return episodes
   } catch (e) {
     console.error('RSS fetch failed, falling back to static data:', e)
-    return dedupeBySlug((staticEpisodes as Record<string, unknown>[]).map(normalizeStaticEpisode))
+    return staticEpisodeList()
   }
 }
 
